@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pavel & Anna</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="jquery.js"></script>
+</head>
+
+<body>
+
+<header>
+  <div class="background-img"></div>
+  <div class="img-overlay"></div>
+  <div class="navbar">
+    <a id="logo" href="#">
+      <div class="logo-letters" onclick="closeMain()">
+        <span class="logo-letter-e">P</span>
+        <span>A</span>
+      </div>
+      <span class="logo-ampersand" onclick="closeMain()">&</span>
+      <div class="logo-circle" onclick="closeMain()"></div>
+    </a>
+    <nav id="navigation" onclick="openMain()">
+      <a class="navigation-link scroll" href="#schedule">Schedule</a>
+      <a class="navigation-link scroll" href="#registry">Registry</a>
+      <a class="navigation-link scroll" href="#rsvp">RSVP</a>
+    </nav>
+  </div>
+  <div class="headline">Pavel & Anna</div>
+  <div onclick="openMain()">
+    <a class="arrow-box arrow-box-down-1" href="#schedule"></a>
+    <a class="arrow-1" href="#schedule"></a>
+  </div>
+  <!--<div class="menu-icon">-->
+    <!--<div class="menu-icon-bar"></div>-->
+    <!--<div class="menu-icon-bar"></div>-->
+    <!--<div class="menu-icon-bar"></div>-->
+  <!--</div>-->
+</header>
+
+<main id="main">
+
+  <div id="schedule">
+    <div class="heading-construction">
+      <div class="heading">
+        <p>Schedule</p>
+        <div class="heading-left"></div>
+        <div class="heading-right"></div>
+      </div>
+    </div>
+    <section class="section-text-wrapper">
+      <p class="schedule">We are getting married
+        <br>and would like to invite you
+        <br>to join us in the celebration of our union!</p>
+      <p class="schedule">The ceremony will be held on</p>
+      <p class="schedule-time"><b>Saturday, December 8, 2018</b>, at <b>10:00 am</b></p>
+      <p class="schedule">at the following address:</p>
+      <p class="schedule-address">
+        <b>House of Prayer</b>
+        <br>
+        <b>100 Floral Lane</b>
+        <br>
+        <b>Dauphin, PA 17018</b></p>
+      <p class="schedule">Reception to follow.</p>
+    </section>
+    <div>
+      <a class="arrow-box arrow-box-down-2" href="#registry"></a>
+      <a class="arrow-2" href="#registry"></a>
+    </div>
+  </div>
+
+  <div id="registry">
+    <div class="heading-construction">
+      <div class="heading">
+        <p>Registry</p>
+        <div class="heading-left"></div>
+        <div class="heading-right"></div>
+      </div>
+    </div>
+    <section class="section-text-wrapper">
+      <p class="registry-info">Your presence at our wedding is the greatest gift we could ever receive. If you wish to
+        honor us with a contribution, we prefer cash. However, if that is not your cup of tea, you might like
+        to try our gift registry below.
+      </p>
+      <p class="registry-info-thanks">Thank you very much!</p>
+      <div class="links">
+        <a href="#">
+          <img class="target" src="img/target.png">
+        </a>
+        <a href="#">
+          <img class="amazon" src="img/amazon.png">
+        </a>
+      </div>
+    </section>
+    <div>
+      <a class="arrow-box arrow-box-down-3" href="#rsvp"></a>
+      <a class="arrow-3" href="#rsvp"></a>
+    </div>
+  </div>
+
+  <div id="rsvp">
+    <div class="heading-construction">
+      <div class="heading">
+        <p>RSVP</p>
+        <div id="heading-left-rsvp"></div>
+        <div id="heading-right-rsvp"></div>
+      </div>
+    </div>
+    <section class="section-text-wrapper" id="section-text-wrapper-rsvp">
+      <div class="rsvp-form">
+        <form id="rsvp-form" method="post" action="">
+          <input name="name" minlength="5" type="text" class="form-control" placeholder="First and Last Name" required
+                 id="name">
+          <br>
+          <input name="other-guests" type="text" class="form-control"
+                 placeholder="Names of additional guests" id="other-guests">
+          <br>
+          <input name="other-guests-number" type="number" min="0" max="20" class="form-control"
+                 placeholder="Number of additional guests" id="other-guests-number">
+          <br>
+          <textarea name="message" class="form-control" placeholder="Optional message" rows="2" id="message"></textarea>
+          <div class="radio-btns">
+            <input type="radio" id="attending" name="reply" value="attending" required>
+            <label for="attending">Glad to attend</label>
+          </div>
+          <div class="radio-btns">
+            <input type="radio" id="not-attending" name="reply" value="not-attending" required>
+            <label for="not-attending">Not attending, sadly</label>
+          </div>
+          <input type="submit" class="submit" value="SUBMIT" id="submit">
+          <div class="alert">Thank you for your response!</div>
+        </form>
+      </div>
+    </section>
+    <div onclick="closeMain()">
+      <a class="arrow-box arrow-box-up" href="#"></a>
+      <a class="arrow-up" href="#"></a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer" id="footer">
+  <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by <a
+          href="https://eugeneilin.dev" target="_blank">Eugene
+    Ilin</a>.
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-database.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
