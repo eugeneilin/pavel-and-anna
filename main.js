@@ -30,13 +30,13 @@ function closeMain() {
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBxTapWuLADB3EsH8YR3D5IT86muIYjoBU",
-  authDomain: "wedding-website-bcf1f.firebaseapp.com",
-  databaseURL: "https://wedding-website-bcf1f.firebaseio.com",
-  projectId: "wedding-website-bcf1f",
-  storageBucket: "gs://wedding-website-bcf1f.appspot.com",
-  messagingSenderId: "694498651753",
-  appId: "1:694498651753:web:b7de133f80c5d7f6"
+  apiKey: "AIzaSyBMjYbR2lBr0R50c8Xl7O_MngivRxATJSY",
+  authDomain: "pavel-and-anna.firebaseapp.com",
+  databaseURL: "https://pavel-and-anna.firebaseio.com",
+  projectId: "pavel-and-anna",
+  storageBucket: "gs://pavel-and-anna.appspot.com",
+  messagingSenderId: "1057009153151",
+  appId: "1:1057009153151:web:f56253596f9f0dfc"
 };
 
 // Initialize Firebase
