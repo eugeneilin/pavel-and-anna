@@ -1,0 +1,110 @@
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Reset codes */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  min-width: 320px; /* built with iPhone 5/SE dimensions */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+#background-img-wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+#background-img {
+  background-image: url(img/back-img-medium.jpg);
+  position: absolute;
+  background-size: cover;
+  top: -7em;
+  left: -7em;
+  height: 120vh;
+  width: 138vw;
+}
+
+#img-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#menu-icon {
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  padding: 1em;
+}
+
+.menu-icon-bar {
+  width: 1.5em;
+  margin: 0.4em 0;
+  background-color: white;
+  height: 0.1em;
+}
+
+#header-text-wrapper {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+}
+
+#header-names {
+  padding-left: 1em;
+  color: white;
+  font-size: 2.3em;
+  font-family: 'Dancing Script', cursive;
+}
+
+#header-message {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  padding-top: 0.5em;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.header-left-indent {
+  padding-left: 13%;
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+/* for Galaxy S5 */
+@media screen and (min-width: 360px) {
+}
+
+/* for iPhone 6/7/8/X*/
+@media screen and (min-width: 375px) {
+}
+
+/* for Pixel 2/2XL and iPhone 6/7/8 Pluses */
+@media screen and (min-width: 411px) {
+}
+
+/* for iPad */
+@media screen and (min-width: 760px) {
+}
+
+/* for iPad Pro and Desktops */
+@media screen and (min-width: 800px) {
+}
