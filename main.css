@@ -59,12 +59,79 @@ h1, h2, h3, h4, p, div {
   margin: 0.4em 0;
   background-color: white;
   height: 0.1em;
-  border-radius: 50%;
-  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 24px 13px rgba(0, 0, 0, 0.07);
   z-index: 1;
 }
 
 #menu-icon:hover {
+}
+
+#menu-overlay-wrapper {
+  padding: 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+}
+
+#menu-overlay {
+  background-color: #F2F2F2;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+  border-radius: .2em;
+  position: relative;
+}
+
+#overlay-heading-wrapper {
+  height: 3.5em;
+  position: relative;
+}
+
+#overlay-heading {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  color: white;
+  background-color: #ffa5e9;
+  padding: 4% 0;
+  width: 70%;
+  margin-top: -6%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  position: absolute;
+  text-align: center;
+  border-radius: .2em;
+}
+
+#heading-shadow {
+  font-size: 2em;
+  width: 70%;
+  margin-top: -6%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  border-radius: .2em;
+  -webkit-box-shadow: 0 0 4px #000;
+  -moz-box-shadow: 0 0 4px #000;
+  box-shadow: 0 0 4px #000;
+  z-index: -1;
+  color: transparent;
+}
+
+#overlay-list {
+  padding-bottom: 5%;
+}
+
+.menu-list-item {
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 2.2em;
+  padding-left: 10%;
+  font-family: 'Vollkorn', sans-serif;
+  color: black;
 }
 
 #header-text-wrapper {
@@ -96,22 +163,12 @@ h1, h2, h3, h4, p, div {
 /* RSVP */
 #rsvp {
   height: 100vh;
-  position: relative;
   border-bottom: 1px solid #c0c0c042;
-  padding: 10%;
+  padding: 50% 10%;
 }
 
 #rsvp-wrapper {
-  position: relative;
-  width: 100%;
   text-align: center;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 #rsvp-date {
@@ -121,32 +178,29 @@ h1, h2, h3, h4, p, div {
 
 #rsvp-location {
   font-family: 'Vollkorn', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: 0.5em 0;
 }
 
 #rsvp-count-down {
   font-family: 'Vollkorn', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #rsvp-button-wrapper {
-  padding: 2.2em 0;
-  position: relative;
+  padding: 2.5em 0;
 }
 
 #rsvp-button {
   font-family: 'Amatic SC', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   text-decoration: none;
   border: solid black 1px;
   border-radius: .2em;
-  padding: 0.1em 33%;
+  padding: 0.2em 0;
   color: black;
-  position: absolute;
-  left: 50%;
-  top: 59%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
 }
 
 #rsvp-button:hover {
@@ -155,9 +209,10 @@ h1, h2, h3, h4, p, div {
   --ms-transition: ease-in-out .2s;
   -o-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
-  font-size: 1.7em;
-  color: darkgrey;
-  border-color: darkgrey;
+  font-size: 1.3em;
+  color: #616161;
+  margin: .1em;
+  border-color: #616161;
 }
 
 /* Schedule */
@@ -185,20 +240,21 @@ h1, h2, h3, h4, p, div {
   font-size: 1em;
 }
 
-.info-details {
-  padding: 3em 0 1em;
-}
-
 .info-grid {
   display: grid;
   grid-template: auto / auto 10em;
   grid-gap: 1em;
+  padding: 2em 0 1em;
 }
 
 .info-headings {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
   padding-bottom: 1em;
+}
+
+.info-time {
+  font-size: 1.1em;
 }
 
 .info-address {
@@ -221,16 +277,15 @@ h1, h2, h3, h4, p, div {
 #registry-p {
   font-family: 'Vollkorn', sans-serif;
   padding: 1em 0;
-  text-indent: 1.5em;
+  text-indent: 1.7em;
   line-height: 1.8em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 #bbb {
   display: block;
-  margin: 0 auto;
+  margin: 1em auto 2em;
   width: 55vw;
-  padding-bottom: 2em;
 }
 
 #footer-text {
@@ -238,10 +293,73 @@ h1, h2, h3, h4, p, div {
   border-top: 1px solid #c0c0c042;
   padding: 10%;
   text-align: center;
+  font-size: 1.1em;
+  font-family: 'Vollkorn', sans-serif;
 }
 
 #footer-link {
   text-decoration: none;
+}
+
+/* RSVP Form */
+#rsvp-page {
+  height: 100vh;
+  border-bottom: 1px solid #c0c0c042;
+  padding: 10%;
+}
+
+#rsvp-form-wrapper {
+  text-align: center;
+}
+
+#rsvp-form-names {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  padding: 0.1em 0;
+}
+
+#rsvp-form-date {
+  font-size: 1.2em;
+  font-family: 'Vollkorn', sans-serif;
+  padding: 1em 0;
+}
+
+.form-control {
+  width: 80vw;
+  font-size: 1em;
+  margin-top: .5em;
+  margin-bottom: 0.9em;
+  padding: 0.4em 1em;
+  resize: none;
+  font-family: 'Vollkorn', sans-serif;
+}
+
+#next-button-wrapper {
+  padding: 2.5em 0;
+}
+
+#next-button {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: solid black 1px;
+  border-radius: .2em;
+  padding: 0.2em 0;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#next-button:hover {
+  -webkit-transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  --ms-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+  font-size: 1.3em;
+  color: #616161;
+  margin: .1em;
+  border-color: #616161;
 }
 
 /* -------- MEDIA QUERIES -------- */

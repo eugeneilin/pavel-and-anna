@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Pavel Pruteanu | Anna Ilin</title>
+  <title>Павел Прутьяну | Аня Ильина</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="main.css" rel="stylesheet">
@@ -10,7 +10,7 @@
 
 <body>
 
-<header>
+<header id="header">
   <div id="background-img-wrapper">
     <div id="background-img"></div>
   </div>
@@ -21,10 +21,25 @@
     </div>
     <div id="header-message">«Смотрите, какую любовь<br>дал нам Отец...»<br>1Ин. 3:1</div>
   </div>
-  <div id="menu-icon">
+  <div id="menu-icon" onclick="openMenu()">
     <div class="menu-icon-bar"></div>
     <div class="menu-icon-bar"></div>
     <div class="menu-icon-bar"></div>
+  </div>
+  <div id="menu-overlay-wrapper">
+    <div id="menu-overlay" onclick="closeMenu()">
+      <div id="overlay-heading-wrapper">
+        <a id="overlay-heading" href="#" onclick="closeMenu()">Павел и Аня</a>
+      </div>
+      <div id="heading-shadow">Павел и Аня</div>
+      <div id="overlay-list">
+        <a class="menu-list-item" href="#" onclick="closeMenu()">Добро пожаловать!</a>
+        <a class="menu-list-item" href="#rsvp" onclick="closeMenu()">Ответить</a>
+        <a class="menu-list-item" href="#schedule" onclick="closeMenu()">Расписание</a>
+        <a class="menu-list-item" href="#registry" onclick="closeMenu()">Реестр</a>
+        <a class="menu-list-item" href="#" onclick="closeMenu()">Фото</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -36,7 +51,7 @@
       <div id="rsvp-location">Harrisburg, Pennsylvania</div>
       <div id="rsvp-count-down">15 дней, 13 часов, 3 минуты, 3 секунды</div>
       <div id="rsvp-button-wrapper">
-        <a id="rsvp-button" href="#">Ответить</a>
+        <a id="rsvp-button" href="/rsvp.html">Ответить</a>
       </div>
     </div>
   </div>
@@ -47,9 +62,9 @@
       <div id="heading-date">Суббота, 12 октября, 2019г.</div>
     </div>
     <div id="schedule-info">
-      <div class="info-details info-grid">
+      <div class="info-grid">
         <div class="info-time">11 часов утра</div>
-        <div class="info-location">
+        <div>
           <div class="info-headings">Сочетание</div>
           <a class="info-address" href="#">House of Prayer<br>100 Floral Lane<br>Dauphin, PA
             17110</a>
@@ -58,9 +73,9 @@
       <div class="calendar-link-wrapper">
         <a class="info-calendar-link" href="#">Добавить в календарь</a>
       </div>
-      <div class="info-details info-grid">
+      <div class="info-grid">
         <div class="info-time">2 часа дня</div>
-        <div class="info-location">
+        <div>
           <div class="info-headings">Пир</div>
           <a class="info-address" href="#">House of Prayer<br>100 Floral Lane<br>Dauphin, PA
             17110</a>
@@ -84,9 +99,10 @@
 
 </main>
 
-<footer>
+<footer id="footer">
   <p id="footer-text">Coded by <a id="footer-link" href="https://eugeneilin.dev" target="_blank">Eugene Ilin</a>.</p>
 </footer>
 
 </body>
+<script src="main.js"></script>
 </html>
