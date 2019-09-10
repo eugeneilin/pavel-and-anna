@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Павел Прутьяну | Аня Ильина</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<main id="rsvp-page">
+  <div id="rsvp-form-wrapper">
+    <div id="rsvp-form-names">Павел и Аня</div>
+    <div id="rsvp-form-date">Суббота, 12 октября, 2019г.</div>
+    <!-- Name -->
+    <form method="post" action="" id="rsvp-1-name">
+      <label class="label">Имя</label>
+      <input name="first-name" minlength="2" type="text" class="form-control" placeholder="Имя" required
+             id="first-name">
+      <label class="label">Фамилия</label>
+      <input name="last-name" minlength="2" type="text" class="form-control" placeholder="Фамилия" required
+             id="last-name">
+    </form>
+    <!-- Additional Guests -->
+    <form method="post" action="" id="rsvp-2-other-guests">
+      <label class="label">Количество добавочных гостей</label>
+      <input name="other-guests-number" type="number" min="0" max="20" class="form-control"
+             placeholder="Количество добавочных гостей" id="other-guests-number">
+      <label class="label">Имена добавочных гостей</label>
+      <input name="other-guests-names" minlength="5" type="text" class="form-control"
+             placeholder="Имена добавочных гостей" required id="other-guests-names">
+    </form>
+    <div id="next-button-wrapper">
+      <a id="next-button" href="#" onclick="">Дальше ></a>
+    </div>
+  </div>
+</main>
+
+</body>
+<script src="main.js"></script>
+</html>
