@@ -1,6 +1,6 @@
 /* Fonts Import */
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
 
 /* Reset codes */
 * {
@@ -41,7 +41,7 @@ h1, h2, h3, h4, p, div {
 #img-overlay {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
   left: 0;
@@ -49,9 +49,9 @@ h1, h2, h3, h4, p, div {
 
 #menu-icon {
   position: fixed;
-  right: 1em;
-  top: 1em;
-  padding: 1em;
+  right: 0;
+  top: 0;
+  padding: 1.8em 10%;
 }
 
 .menu-icon-bar {
@@ -59,32 +59,189 @@ h1, h2, h3, h4, p, div {
   margin: 0.4em 0;
   background-color: white;
   height: 0.1em;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+#menu-icon:hover {
 }
 
 #header-text-wrapper {
   position: absolute;
-  top: 65%;
+  bottom: 2em;
   width: 100%;
 }
 
 #header-names {
-  padding-left: 1em;
+  padding-left: 10%;
   color: white;
-  font-size: 2.3em;
-  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-family: 'Amatic SC', cursive;
 }
 
 #header-message {
   color: white;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Vollkorn', sans-serif;
   padding-top: 0.5em;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.6em;
   text-align: center;
 }
 
 .header-left-indent {
   padding-left: 13%;
+}
+
+/* RSVP */
+#rsvp {
+  height: 100vh;
+  position: relative;
+  border-bottom: 1px solid #c0c0c042;
+  padding: 10%;
+}
+
+#rsvp-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#rsvp-date {
+  font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+}
+
+#rsvp-location {
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 1.3em;
+  padding: 0.5em 0;
+}
+
+#rsvp-count-down {
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 1.3em;
+}
+
+#rsvp-button-wrapper {
+  padding: 2.2em 0;
+  position: relative;
+}
+
+#rsvp-button {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  text-decoration: none;
+  border: solid black 1px;
+  border-radius: .2em;
+  padding: 0.1em 33%;
+  color: black;
+  position: absolute;
+  left: 50%;
+  top: 59%;
+  transform: translate(-50%, -50%);
+}
+
+#rsvp-button:hover {
+  -webkit-transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  --ms-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+  font-size: 1.7em;
+  color: darkgrey;
+  border-color: darkgrey;
+}
+
+/* Schedule */
+#schedule {
+  padding: 10%;
+  border-bottom: 1px solid #c0c0c042;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+}
+
+#heading-date {
+  font-family: 'Vollkorn', sans-serif;
+  padding: 1em 0 0.2em;
+  border-bottom: 1px solid grey;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#schedule-info {
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 1em;
+}
+
+.info-details {
+  padding: 3em 0 1em;
+}
+
+.info-grid {
+  display: grid;
+  grid-template: auto / auto 10em;
+  grid-gap: 1em;
+}
+
+.info-headings {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.info-address {
+  text-decoration: none;
+}
+
+.info-calendar-link {
+  text-decoration: none;
+}
+
+.calendar-link-wrapper {
+  text-align: right;
+}
+
+#registry {
+  padding: 10%;
+  border-bottom: 1px solid #c0c0c042;
+}
+
+#registry-p {
+  font-family: 'Vollkorn', sans-serif;
+  padding: 1em 0;
+  text-indent: 1.5em;
+  line-height: 1.8em;
+  font-size: 1em;
+}
+
+#bbb {
+  display: block;
+  margin: 0 auto;
+  width: 55vw;
+  padding-bottom: 2em;
+}
+
+#footer-text {
+  color: silver;
+  border-top: 1px solid #c0c0c042;
+  padding: 10%;
+  text-align: center;
+}
+
+#footer-link {
+  text-decoration: none;
 }
 
 /* -------- MEDIA QUERIES -------- */
