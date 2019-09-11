@@ -33,16 +33,16 @@ h1, h2, h3, h4, p, div {
   background-image: url(img/back-img-medium.jpg);
   position: absolute;
   background-size: cover;
-  top: -7em;
-  left: -7em;
-  height: 120vh;
-  width: 138vw;
+  top: -3em;
+  left: -15em;
+  height: 111vh;
+  width: 178vw;
 }
 
 #img-overlay {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.35);
   position: absolute;
   top: 0;
   left: 0;
