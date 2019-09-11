@@ -42,7 +42,7 @@ h1, h2, h3, h4, p, div {
 #img-overlay {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.15);
   position: absolute;
   top: 0;
   left: 0;
