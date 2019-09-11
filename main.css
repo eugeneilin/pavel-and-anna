@@ -26,6 +26,7 @@ h1, h2, h3, h4, p, div {
 #background-img-wrapper {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 
 #background-img {
@@ -52,6 +53,7 @@ h1, h2, h3, h4, p, div {
   right: 0;
   top: 0;
   padding: 1.8em 10%;
+  user-select: none;
 }
 
 .menu-icon-bar {
@@ -61,6 +63,7 @@ h1, h2, h3, h4, p, div {
   height: 0.1em;
   box-shadow: 0 0 24px 13px rgba(0, 0, 0, 0.07);
   z-index: 1;
+  user-select: none;
 }
 
 #menu-icon:hover {
@@ -110,6 +113,7 @@ h1, h2, h3, h4, p, div {
   margin-top: -6%;
   top: 0;
   left: 50%;
+  padding: 5% 0;
   transform: translateX(-50%);
   position: absolute;
   border-radius: .2em;
@@ -132,6 +136,7 @@ h1, h2, h3, h4, p, div {
   padding-left: 10%;
   font-family: 'Vollkorn', sans-serif;
   color: black;
+  user-select: none;
 }
 
 #header-text-wrapper {
@@ -201,6 +206,7 @@ h1, h2, h3, h4, p, div {
   color: black;
   display: flex;
   justify-content: center;
+  user-select: none;
 }
 
 #rsvp-button:hover {
@@ -286,6 +292,7 @@ h1, h2, h3, h4, p, div {
   display: block;
   margin: 1em auto 2em;
   width: 55vw;
+  user-select: none;
 }
 
 #footer-text {
@@ -304,24 +311,32 @@ h1, h2, h3, h4, p, div {
 /* RSVP Form */
 #rsvp-page {
   height: 100vh;
-  border-bottom: 1px solid #c0c0c042;
-  padding: 10%;
+  padding: 5%;
+  border: 5vw solid #F2F2F2;
 }
 
 #rsvp-form-wrapper {
-  text-align: center;
 }
 
 #rsvp-form-names {
+  text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 2em;
-  padding: 0.1em 0;
+  padding-bottom: .3em;
 }
 
 #rsvp-form-date {
   font-size: 1.2em;
   font-family: 'Vollkorn', sans-serif;
-  padding: 1em 0;
+  padding: 0.1em 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.label {
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 1em;
 }
 
 .form-control {
@@ -335,7 +350,7 @@ h1, h2, h3, h4, p, div {
 }
 
 #next-button-wrapper {
-  padding: 2.5em 0;
+  padding: 1.3em 0 0;
 }
 
 #next-button {
@@ -348,6 +363,7 @@ h1, h2, h3, h4, p, div {
   color: black;
   display: flex;
   justify-content: center;
+  user-select: none;
 }
 
 #next-button:hover {
