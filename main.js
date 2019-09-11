@@ -1,10 +1,12 @@
 // Open and close Menu
 function openMenu() {
   document.getElementById('menu-overlay-wrapper').style.display = 'block';
+  document.getElementById('menu-icon').style.display = 'none';
 }
 
 function closeMenu() {
   document.getElementById('menu-overlay-wrapper').style.display = 'none';
+  document.getElementById('menu-icon').style.display = 'block';
 }
 
 //
