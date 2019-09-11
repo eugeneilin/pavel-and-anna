@@ -66,7 +66,7 @@ h1, h2, h3, h4, p, div {
   user-select: none;
 }
 
-#menu-icon:hover {
+.menu-icon-bar:hover {
 }
 
 #menu-overlay-wrapper {
@@ -95,7 +95,7 @@ h1, h2, h3, h4, p, div {
   font-family: 'Amatic SC', cursive;
   font-size: 2em;
   color: white;
-  background-color: #ffa5e9;
+  background-color: #6f4e37;
   padding: 4% 0;
   width: 70%;
   margin-top: -6%;
@@ -105,6 +105,10 @@ h1, h2, h3, h4, p, div {
   position: absolute;
   text-align: center;
   border-radius: .2em;
+}
+
+#overlay-heading:focus, #overlay-heading:hover, #overlay-heading:active {
+  color: #ffebed;
 }
 
 #heading-shadow {
@@ -139,6 +143,14 @@ h1, h2, h3, h4, p, div {
   user-select: none;
 }
 
+.menu-list-item:focus, .menu-list-item:hover, .menu-list-item:active {
+  color: #6f4e37;
+}
+
+.menu-list-item:focus, .menu-list-item:active {
+  background-color: #ffebed;
+}
+
 #header-text-wrapper {
   position: absolute;
   bottom: 2em;
@@ -168,7 +180,7 @@ h1, h2, h3, h4, p, div {
 /* RSVP */
 #rsvp {
   height: 100vh;
-  border-bottom: 1px solid #c0c0c042;
+  border-bottom: 1px solid #ffebed;
   padding: 50% 10%;
 }
 
@@ -207,24 +219,24 @@ h1, h2, h3, h4, p, div {
   display: flex;
   justify-content: center;
   user-select: none;
-}
-
-#rsvp-button:hover {
   -webkit-transition: ease-in-out .2s;
   -moz-transition: ease-in-out .2s;
   --ms-transition: ease-in-out .2s;
   -o-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
+}
+
+#rsvp-button:focus, #rsvp-button:active {
   font-size: 1.3em;
-  color: #616161;
+  color: #6f4e37;
   margin: .1em;
-  border-color: #616161;
+  border-color: #6f4e37;
 }
 
 /* Schedule */
 #schedule {
   padding: 10%;
-  border-bottom: 1px solid #c0c0c042;
+  border-bottom: 1px solid #ffebed;
 }
 
 .heading {
@@ -236,7 +248,7 @@ h1, h2, h3, h4, p, div {
 #heading-date {
   font-family: 'Vollkorn', sans-serif;
   padding: 1em 0 0.2em;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #6f4e37;
   font-size: 1.2em;
   text-align: center;
 }
@@ -248,9 +260,9 @@ h1, h2, h3, h4, p, div {
 
 .info-grid {
   display: grid;
-  grid-template: auto / auto 10em;
+  grid-template: 1em / auto 50%;
   grid-gap: 1em;
-  padding: 2em 0 1em;
+  padding: 1em 0 0;
 }
 
 .info-headings {
@@ -263,21 +275,35 @@ h1, h2, h3, h4, p, div {
   font-size: 1.1em;
 }
 
+.info-address-wrapper {
+  text-align: center;
+  padding-top: 2em;
+}
+
 .info-address {
   text-decoration: none;
+  color: #6f4e37;
+}
+
+.info-address:active, .info-address:focus, .info-address:hover,
+.info-calendar-link:active, .info-calendar-link:focus, .info-calendar-link:hover,
+#footer-link:active, #footer-link:focus, #footer-link:hover {
+  color: #ffebed;
 }
 
 .info-calendar-link {
   text-decoration: none;
+  color: #6f4e37;
 }
 
 .calendar-link-wrapper {
-  text-align: right;
+  text-align: center;
+  padding-top: 1.5em;
 }
 
 #registry {
   padding: 10%;
-  border-bottom: 1px solid #c0c0c042;
+  border-bottom: 1px solid #ffebed;
 }
 
 #registry-p {
@@ -296,23 +322,23 @@ h1, h2, h3, h4, p, div {
 }
 
 #footer-text {
-  color: silver;
-  border-top: 1px solid #c0c0c042;
-  padding: 10%;
+  color: #6f4e3780;
+  padding: 5% 10%;
   text-align: center;
-  font-size: 1.1em;
+  font-size: .9em;
   font-family: 'Vollkorn', sans-serif;
 }
 
 #footer-link {
   text-decoration: none;
+  color: #6f4e37;
 }
 
 /* RSVP Form */
 #rsvp-page {
   height: 100vh;
   padding: 5%;
-  border: 5vw solid #F2F2F2;
+  border: 5vw solid #ffebed;
 }
 
 #rsvp-form-wrapper {
@@ -329,7 +355,7 @@ h1, h2, h3, h4, p, div {
   font-size: 1.2em;
   font-family: 'Vollkorn', sans-serif;
   padding: 0.1em 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #6f4e37;
   margin-bottom: 1em;
   text-align: center;
 }
@@ -341,6 +367,9 @@ h1, h2, h3, h4, p, div {
 
 .form-control {
   width: 80vw;
+  border: 1px solid rgba(111, 78, 55, 0.5);
+  outline: none;
+  color: #6f4e37;
   font-size: 1em;
   margin-top: .5em;
   margin-bottom: 0.9em;
@@ -364,18 +393,18 @@ h1, h2, h3, h4, p, div {
   display: flex;
   justify-content: center;
   user-select: none;
-}
-
-#next-button:hover {
   -webkit-transition: ease-in-out .2s;
   -moz-transition: ease-in-out .2s;
   --ms-transition: ease-in-out .2s;
   -o-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
+}
+
+#next-button:focus, #next-button:active {
   font-size: 1.3em;
-  color: #616161;
+  color: #6f4e37;
   margin: .1em;
-  border-color: #616161;
+  border-color: #6f4e37;
 }
 
 /* -------- MEDIA QUERIES -------- */
