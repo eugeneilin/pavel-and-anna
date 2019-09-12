@@ -23,25 +23,25 @@ h1, h2, h3, h4, p, div {
 }
 
 /* Header */
-#background-img-wrapper {
+.background-img-wrapper {
   position: relative;
-  height: 32em;
+  height: 33em;
   overflow: hidden;
 }
 
-#background-img {
-  background-image: url(img/back-img-medium.jpg);
+#background-img-main {
+  background-image: url(img/back-img-main-medium.jpg);
   position: absolute;
   background-size: cover;
   top: -3.5em;
-  left: -13em;
+  left: -13.7em;
   height: 111%;
   width: 196vw;
 }
 
 #img-overlay {
   width: 100vw;
-  height: 32em;
+  height: 33em;
   background-color: rgba(0, 0, 0, 0.185);
   position: absolute;
   top: 0;
@@ -54,6 +54,7 @@ h1, h2, h3, h4, p, div {
   top: 0;
   padding: 1.8em 10%;
   user-select: none;
+  z-index: 1;
 }
 
 .menu-icon-bar {
@@ -75,6 +76,7 @@ h1, h2, h3, h4, p, div {
   top: 0;
   width: 100%;
   display: none;
+  z-index: 1;
 }
 
 #menu-overlay {
@@ -153,7 +155,7 @@ h1, h2, h3, h4, p, div {
 
 #header-text-wrapper {
   position: absolute;
-  top: 17em;
+  top: 18em;
   width: 100%;
 }
 
@@ -179,13 +181,29 @@ h1, h2, h3, h4, p, div {
 
 /* RSVP */
 #rsvp {
-  height: 32em;
+  height: 33em;
   border-bottom: 1px solid #ffebed;
-  padding: 45% 10%;
+  padding: 10%;
+  position: relative;
 }
 
 #rsvp-wrapper {
   text-align: center;
+  padding-top: 40%;
+}
+
+#hearts-clipart {
+  background-image: url(img/hearts-clipart.jpg);
+  height: 84%;
+  width: 100%;
+  position: absolute;
+  top: 14%;
+  left: 20%;
+  opacity: .35;
+  z-index: -1;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 #rsvp-date {
@@ -235,10 +253,27 @@ h1, h2, h3, h4, p, div {
 
 /* Schedule */
 #schedule {
-  height: 32em;
-  padding: 30% 10%;
+  height: 33em;
+  padding: 10%;
   border-bottom: 1px solid #ffebed;
+  position: relative;
+  overflow: hidden;
 }
+
+#schedule-wrapper {
+  padding-top: 20%;
+}
+
+#background-img-schedule {
+  background-image: url(img/on-bridge.jpeg);
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: -65%;
+  height: 100%;
+  width: 175%;
+  opacity: 0.3;
+  z-index: -1;}
 
 .heading {
   text-align: center;
@@ -248,9 +283,9 @@ h1, h2, h3, h4, p, div {
 
 #heading-date {
   font-family: 'Vollkorn', sans-serif;
-  padding: 1em 0 0.2em;
-  border-bottom: 1px solid #6f4e37;
-  font-size: 1.2em;
+  padding: .5em 0 0.1em;
+  border-bottom: 1px solid #6f4e374f;
+  font-size: 1.1em;
   text-align: center;
 }
 
@@ -260,8 +295,9 @@ h1, h2, h3, h4, p, div {
 }
 
 .info-table {
-  padding-top: 1em;
+  padding-top: 1.4em;
   width: 100%;
+  font-size: 1.1em;
 }
 
 .info-headings {
@@ -269,17 +305,17 @@ h1, h2, h3, h4, p, div {
 }
 
 .table-data {
-  font-size: 1.1em;
+  width: 50%;
 }
 
 .info-address-wrapper {
   text-align: center;
-  padding-top: 2em;
+  padding-top: 2.5em;
 }
 
 .info-address {
   text-decoration: none;
-  color: #6f4e37;
+  color: #6f4e37;    font-size: 1.1em;
 }
 
 .info-address:active, .info-address:focus, .info-address:hover,
@@ -300,7 +336,7 @@ h1, h2, h3, h4, p, div {
 
 /* Registry */
 #registry {
-  height: 32em;
+  height: 33em;
   padding: 10%;
   border-bottom: 1px solid #ffebed;
 }
@@ -320,6 +356,52 @@ h1, h2, h3, h4, p, div {
   user-select: none;
 }
 
+/* Moments */
+#moments {
+  height: 33em;
+  border-bottom: 1px solid #ffebed;
+  padding: 10%;
+  position: relative;
+
+}
+
+#moments-wrapper {
+  text-align: center;
+}
+
+#moments-button-wrapper {
+  padding: 2.5em 0;
+}
+
+#moments-button {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: solid black 1px;
+  border-radius: .2em;
+  padding: 0.2em 0;
+  color: black;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  -webkit-transition: ease-in-out .2s;
+  -moz-transition: ease-in-out .2s;
+  --ms-transition: ease-in-out .2s;
+  -o-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+#moments-button:focus, #moments-button:active {
+  font-size: 1.3em;
+  color: #6f4e37;
+  margin: .1em;
+  border-color: #6f4e37;
+}
+
+
+
+/* Footer */
+
 #footer-text {
   color: #6f4e3780;
   padding: 5% 10%;
@@ -333,7 +415,7 @@ h1, h2, h3, h4, p, div {
   color: #6f4e37;
 }
 
-/* RSVP Form */
+/* RSVP Form (rsvp.html) */
 #rsvp-page {
   height: 100vh;
   padding: 5%;
