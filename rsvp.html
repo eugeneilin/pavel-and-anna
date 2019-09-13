@@ -10,9 +10,11 @@
 
 <body>
 
-<main id="rsvp-page">
+<main id="rsvp-section">
   <div id="rsvp-form-wrapper">
-    <div id="rsvp-form-names">Паша и Аня</div>
+    <div id="rsvp-img-wrapper">
+      <img id="rsvp-img" src="img/before-line-of-trees.jpeg" alt="heart">
+    </div>
     <div id="rsvp-form-date">Суббота, 12 октября, 2019г.</div>
     <!-- Name -->
     <form method="post" action="" id="rsvp-1-name">
@@ -31,9 +33,20 @@
       <label class="label">Имена добавочных гостей</label>
       <input name="other-guests-names" minlength="5" type="text" class="form-control"
              placeholder="Имя, имя, имя..." required id="other-guests-names">
+      <textarea name="message" class="form-control" placeholder="Optional message" rows="2" id="message"></textarea>
+      <div class="radio-btns">
+        <input type="radio" id="attending" name="reply" value="attending" required>
+        <label for="attending">Glad to attend</label>
+      </div>
+      <div class="radio-btns">
+        <input type="radio" id="not-attending" name="reply" value="not-attending" required>
+        <label for="not-attending">Not attending, sadly</label>
+      </div>
+      <input type="submit" class="submit" value="SUBMIT" id="submit">
+      <div class="alert">Thank you for your response!</div>
     </form>
-    <div id="next-button-wrapper">
-      <a id="next-button" href="#" onclick="">Дальше ></a>
+    <div id="submit-button-wrapper">
+      <a id="submit-button" href="#" onclick="">Ответить</a>
     </div>
   </div>
 </main>

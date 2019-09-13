@@ -234,6 +234,7 @@ h1, h2, h3, h4, p, div {
   border-radius: .2em;
   padding: 0.2em 0;
   color: black;
+  background-color: rgba(255, 255, 255, 0.7);
   display: flex;
   justify-content: center;
   user-select: none;
@@ -261,19 +262,19 @@ h1, h2, h3, h4, p, div {
 }
 
 #schedule-wrapper {
-  padding-top: 20%;
 }
 
 #background-img-schedule {
   background-image: url(img/on-bridge.jpeg);
   position: absolute;
   background-size: cover;
-  top: 0;
-  left: -65%;
-  height: 100%;
-  width: 175%;
-  opacity: 0.3;
-  z-index: -1;}
+  top: 23%;
+  left: -40%;
+  height: 77%;
+  width: 155%;
+  opacity: 0.75;
+  z-index: -1;
+}
 
 .heading {
   text-align: center;
@@ -292,6 +293,7 @@ h1, h2, h3, h4, p, div {
 #schedule-info {
   font-family: 'Vollkorn', sans-serif;
   font-size: 1em;
+  text-shadow: 0 0 20px white;
 }
 
 .info-table {
@@ -310,12 +312,14 @@ h1, h2, h3, h4, p, div {
 
 .info-address-wrapper {
   text-align: center;
-  padding-top: 2.5em;
+  padding-top: 62%;
 }
 
 .info-address {
   text-decoration: none;
-  color: #6f4e37;    font-size: 1.1em;
+  color: #6f4e37;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .info-address:active, .info-address:focus, .info-address:hover,
@@ -327,6 +331,7 @@ h1, h2, h3, h4, p, div {
 .info-calendar-link {
   text-decoration: none;
   color: #6f4e37;
+  font-weight: bold;
 }
 
 .calendar-link-wrapper {
@@ -398,8 +403,6 @@ h1, h2, h3, h4, p, div {
   border-color: #6f4e37;
 }
 
-
-
 /* Footer */
 
 #footer-text {
@@ -416,30 +419,33 @@ h1, h2, h3, h4, p, div {
 }
 
 /* RSVP Form (rsvp.html) */
-#rsvp-page {
-  height: 100vh;
+#rsvp-section {
+  background-color: #ffebed;
   padding: 5%;
-  border: 5vw solid #ffebed;
 }
 
 #rsvp-form-wrapper {
+  background-color: white;
+  padding: 5%;
+  box-shadow: 0 0 9px 0 #a5a5a5;
 }
 
-#rsvp-form-names {
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 2em;
-  padding-bottom: .3em;
+#rsvp-img-wrapper {
+}
+
+#rsvp-img {
+  width: 100%;
+  display: block;
 }
 
 #rsvp-form-date {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Vollkorn', sans-serif;
-  padding: 0.1em 0;
-  border-bottom: 1px solid #6f4e37;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-align: center;
-}
+  COLOR: white;
+  margin-top: -2em;
+  text-shadow: 0 0 20px #6f4e37;}
 
 .label {
   font-family: 'Vollkorn', sans-serif;
@@ -459,11 +465,11 @@ h1, h2, h3, h4, p, div {
   font-family: 'Vollkorn', sans-serif;
 }
 
-#next-button-wrapper {
+#submit-button-wrapper {
   padding: 1.3em 0 0;
 }
 
-#next-button {
+#submit-button {
   font-family: 'Amatic SC', cursive;
   font-size: 1.5em;
   text-decoration: none;
@@ -481,7 +487,7 @@ h1, h2, h3, h4, p, div {
   transition: ease-in-out .2s;
 }
 
-#next-button:focus, #next-button:active {
+#submit-button:focus, #submit-button:active {
   font-size: 1.3em;
   color: #6f4e37;
   margin: .1em;
