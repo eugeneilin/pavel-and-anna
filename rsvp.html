@@ -16,41 +16,43 @@
       <img id="rsvp-img" src="img/before-line-of-trees.jpeg" alt="heart">
     </div>
     <div id="rsvp-form-date">Суббота, 12 октября, 2019г.</div>
-    <!-- Name -->
-    <form method="post" action="" id="rsvp-1-name">
-      <label class="label">Имя</label>
-      <input name="first-name" minlength="2" type="text" class="form-control" placeholder="Имя" required
-             id="first-name">
-      <label class="label">Фамилия</label>
-      <input name="last-name" minlength="2" type="text" class="form-control" placeholder="Фамилия" required
-             id="last-name">
-    </form>
-    <!-- Additional Guests -->
-    <form method="post" action="" id="rsvp-2-other-guests">
-      <label class="label">Количество добавочных гостей</label>
+    <form method="post" action="" id="rsvp-form">
+      <label class="label">Ваше имя и фамилия</label>
+      <input name="name" minlength="2" type="text" class="form-control" placeholder="Имя Фамилия" required
+             id="name">
+      <label class="label">Сколько гостей с Вами?</label>
       <input name="other-guests-number" type="number" min="0" max="20" class="form-control"
-             placeholder="0-20" id="other-guests-number">
-      <label class="label">Имена добавочных гостей</label>
+             placeholder="0-25" id="other-guests-number">
+      <label class="label">Имена дополнительных гостей</label>
       <input name="other-guests-names" minlength="5" type="text" class="form-control"
-             placeholder="Имя, имя, имя..." required id="other-guests-names">
-      <textarea name="message" class="form-control" placeholder="Optional message" rows="2" id="message"></textarea>
-      <div class="radio-btns">
-        <input type="radio" id="attending" name="reply" value="attending" required>
-        <label for="attending">Glad to attend</label>
+             placeholder="Имя Фамилия, Имя Фамилия..." id="other-guests-names">
+      <label class="label">Оставить сообщение</label>
+      <textarea name="message" class="form-control" placeholder="(Необязательно)" rows="2" id="message"></textarea>
+      <div id="rsvp-question"><label class="label">Будете ли Вы на нашем торжестве?</label>
+        <div class="radio-btns">
+          <input type="radio" id="attending" name="reply" value="attending" required>
+          <label for="attending">Да, с радостью</label>
+        </div>
+        <div class="radio-btns">
+          <input type="radio" id="not-attending" name="reply" value="not-attending" required>
+          <label for="not-attending">К сожаленью, нет</label>
+        </div>
+        <div id="submit-button-wrapper">
+          <input type="submit" class="submit" value="Ответить" id="submit-button">
+        </div>
+        <div id="thank-you-wrapper">
+          <div id="thank-you">Спасибо за ответ!</div>
+        </div>
+        <div id="go-back-button-wrapper">
+          <a id="go-back-button" href="index.html">Ответить</a>
+        </div>
       </div>
-      <div class="radio-btns">
-        <input type="radio" id="not-attending" name="reply" value="not-attending" required>
-        <label for="not-attending">Not attending, sadly</label>
-      </div>
-      <input type="submit" class="submit" value="SUBMIT" id="submit">
-      <div class="alert">Thank you for your response!</div>
     </form>
-    <div id="submit-button-wrapper">
-      <a id="submit-button" href="#" onclick="">Ответить</a>
-    </div>
   </div>
 </main>
 
-</body>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
 <script src="main.js"></script>
+</body>
 </html>
