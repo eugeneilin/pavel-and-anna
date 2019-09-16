@@ -22,7 +22,7 @@ h1, h2, h3, h4, p, div {
 }
 
 /* Header */
-.background-img-wrapper {
+#background-img-wrapper {
   position: relative;
   height: 33em;
   overflow: hidden;
@@ -325,7 +325,12 @@ h1, h2, h3, h4, p, div {
 
 .info-address-wrapper {
   text-align: center;
-  padding-top: 62%;
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 100%;
+  bottom: 20%;
+  transform: translateX(-50%);
 }
 
 .info-address {
@@ -347,7 +352,12 @@ h1, h2, h3, h4, p, div {
 
 .calendar-link-wrapper {
   text-align: center;
-  padding-top: 1.5em;
+  position: absolute;
+  display: block;
+  left: 50%;
+  width: 100%;
+  bottom: 10%;
+  transform: translateX(-50%);
 }
 
 /* Registry */
@@ -362,17 +372,15 @@ h1, h2, h3, h4, p, div {
   text-indent: 1.7em;
   line-height: 1.8em;
   font-size: 1em;
+  margin-bottom: 1em;
 }
 
 #bbb {
   background-image: url(img/bb&b.png);
-  position: absolute;
   background-size: cover;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 10%;
-  width: 54%;
-  margin-top: 10%;
+  width: 65%;
+  margin: auto;
+  height: 10vh;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -443,6 +451,7 @@ h1, h2, h3, h4, p, div {
 #rsvp-section {
   background-color: #ffebed;
   padding: 5%;
+  min-height: 100vh;
 }
 
 #rsvp-form-wrapper {
@@ -606,18 +615,44 @@ h1, h2, h3, h4, p, div {
 
 /* for Galaxy S5 */
 @media screen and (min-width: 360px) {
+  #background-img-wrapper, #img-overlay, #rsvp, #schedule, #registry {
+    height: 37em;
+  }
+
+  #header-text-wrapper {
+    top: 22em;
+  }
+
+  #rsvp-wrapper {
+    padding-top: 50%;
+  }
 }
 
 /* for iPhone 6/7/8/X*/
 @media screen and (min-width: 375px) {
+  #background-img-wrapper, #img-overlay, #rsvp, #schedule, #registry {
+    height: 38em;
+  }
+
+  #header-text-wrapper {
+    top: 23em;
+  }
 }
 
 /* for Pixel 2/2XL and iPhone 6/7/8 Pluses */
 @media screen and (min-width: 411px) {
+  #background-img-wrapper, #img-overlay, #rsvp, #schedule, #registry {
+    height: 42em;
+  }
+
+  #header-text-wrapper {
+    top: 27em;
+  }
 }
 
 /* for iPad */
 @media screen and (min-width: 760px) {
+
 }
 
 /* for iPad Pro and Desktops */
