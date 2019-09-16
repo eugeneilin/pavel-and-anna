@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans&display=swap');
+
 /* Reset codes */
 * {
   box-sizing: border-box;
@@ -11,7 +13,7 @@ html, body {
   min-width: 320px; /* built with iPhone 5/SE dimensions */
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: 'Candara', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 h1, h2, h3, h4, p, div {
@@ -31,7 +33,8 @@ h1, h2, h3, h4, p, div {
   position: absolute;
   background-size: cover;
   top: -3.5em;
-  left: -13.7em;
+  left: 71%;
+  transform: translateX(-71%);
   height: 111%;
   width: 196vw;
 }
@@ -92,12 +95,13 @@ h1, h2, h3, h4, p, div {
 }
 
 #overlay-heading-wrapper {
-  height: 3.5em;
+  height: 2.8em;
   position: relative;
 }
 
 #overlay-heading {
   font-size: 1.5em;
+  font-family: 'Alegreya', serif;
   font-style: italic;
   color: white;
   background-color: #6f4e37;
@@ -145,6 +149,7 @@ h1, h2, h3, h4, p, div {
   position: absolute;
   top: 18em;
   width: 100%;
+  font-family: 'Alegreya', serif;
 }
 
 #header-names {
@@ -160,7 +165,7 @@ h1, h2, h3, h4, p, div {
   font-size: 1.2em;
   line-height: 1.6em;
   text-align: center;
-  text-shadow: 0 0 0.3em black;
+  text-shadow: 0 0.15em 0.3em black;
 }
 
 .header-left-indent {
@@ -186,7 +191,8 @@ h1, h2, h3, h4, p, div {
   width: 100%;
   position: absolute;
   top: 14%;
-  left: 20%;
+  left: 40%;
+  transform: translateX(-20%);
   opacity: .35;
   z-index: -1;
   background-repeat: no-repeat;
@@ -196,6 +202,7 @@ h1, h2, h3, h4, p, div {
 
 #rsvp-date {
   font-size: 1.35em;
+  font-family: 'Alegreya', serif;
 }
 
 #rsvp-location {
@@ -259,10 +266,11 @@ h1, h2, h3, h4, p, div {
   position: absolute;
   background-size: cover;
   top: 14%;
-  left: -56%;
+  left: 75%;
   height: 86.5%;
   width: 170%;
-  opacity: 0.75;
+  opacity: 0.6;
+  transform: translateX(-75%);
   z-index: -1;
 }
 
@@ -270,6 +278,7 @@ h1, h2, h3, h4, p, div {
   text-align: center;
   font-size: 2em;
   font-style: italic;
+  font-family: 'Alegreya', serif;
 }
 
 #heading-date {
@@ -281,7 +290,7 @@ h1, h2, h3, h4, p, div {
 
 #schedule-info {
   font-size: 1em;
-  text-shadow: 0 0 .4em #ffebed;
+  text-shadow: 0 0.05em .4em #ffebed;
 }
 
 .info-table {
@@ -299,6 +308,7 @@ h1, h2, h3, h4, p, div {
   text-align: center;
   font-size: .8em;
   padding: 0;
+  line-height: 0.7em;
 }
 
 .info-headings {
@@ -306,7 +316,7 @@ h1, h2, h3, h4, p, div {
 }
 
 .table-data {
-  width: 10%;
+  width: 30%;
 }
 
 .info-data-line-2 {
@@ -355,13 +365,20 @@ h1, h2, h3, h4, p, div {
 }
 
 #bbb {
-  display: block;
-  margin: 10% auto;
-  width: 55vw;
+  background-image: url(img/bb&b.png);
+  position: absolute;
+  background-size: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 54%;
+  margin-top: 10%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-filter: contrast(160%) brightness(95%) hue-rotate(176deg);
+  filter: contrast(160%) brightness(95%) hue-rotate(176deg);
 }
 
 /* Moments */
@@ -432,23 +449,37 @@ h1, h2, h3, h4, p, div {
   background-color: white;
   padding: 5%;
   box-shadow: 0 0 9px 0 #a5a5a5;
+  position: relative;
 }
 
-#rsvp-img-wrapper {
-}
-
-#rsvp-img {
-  width: 100%;
+#background-img-rsvp-wrapper {
+  position: relative;
   display: block;
+  height: 13em;
+  overflow: hidden;
+  box-shadow: 0 0 0.4em 0 black;
+}
+
+#background-img-rsvp {
+  background-image: url(img/before-line-of-trees.jpeg);
+  position: absolute;
+  background-size: cover;
+  top: -1em;
+  left: -2em;
+  height: 160%;
+  width: 130vw;
 }
 
 #rsvp-form-date {
+  font-family: 'Alegreya', serif;
   font-size: 1.1em;
   margin-bottom: 2em;
   text-align: center;
-  color: black;
+  color: #ffebed;
+  position: relative;
+  z-index: 1;
   margin-top: -2em;
-  text-shadow: 0 0 0.25em #ffebed;
+  text-shadow: 0 0.05em 0.3em #000;
 }
 
 .label {
@@ -465,7 +496,7 @@ h1, h2, h3, h4, p, div {
   margin-bottom: 0.9em;
   padding: 0.4em 1em;
   resize: none;
-  font-family: 'Candara', sans-serif;
+  font-family: 'Alegreya', serif;
 }
 
 #rsvp-question {
@@ -475,6 +506,7 @@ h1, h2, h3, h4, p, div {
 .radio-btns {
   font-size: 1em;
   padding: .3em;
+  font-family: 'Alegreya', serif;
 }
 
 #submit-button-wrapper {
@@ -484,7 +516,7 @@ h1, h2, h3, h4, p, div {
 
 #submit-button {
   font-size: 1.3em;
-  font-family: 'Candara', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   text-decoration: none;
   width: 100%;
   border: solid black 1px;
@@ -520,7 +552,8 @@ h1, h2, h3, h4, p, div {
 
 #thank-you {
   font-size: 1.1em;
-  font-family: 'Candara', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: .15em .01em;
   width: 100%;
   border: solid #6f4e37 1px;
   border-radius: .2em;
@@ -568,7 +601,6 @@ h1, h2, h3, h4, p, div {
   border-color: #6f4e37;
   background-color: rgba(255, 255, 255, 0.9);
 }
-
 
 /* -------- MEDIA QUERIES -------- */
 
