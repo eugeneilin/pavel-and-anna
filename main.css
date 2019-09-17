@@ -732,4 +732,13 @@ h1, h2, h3, h4, p, div {
 
 /* for iPad Pro and Desktops */
 @media only screen and (min-width: 800px) {
+  #header {
+    width: 50%;
+    position: fixed;
+  }
+
+  #rsvp, #schedule, #registry {
+    position: relative;
+    margin-left: 50%;
+  }
 }
