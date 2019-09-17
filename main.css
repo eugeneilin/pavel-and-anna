@@ -227,17 +227,20 @@ h1, h2, h3, h4, p, div {
 }
 
 #rsvp-count-down-table {
-  font-size: 1em;
   width: 100%;
 }
 
 .rsvp-time-unit {
-  font-size: 1.6em;
+  font-size: 2em;
   width: 25%;
 }
 
+.rsvp-count-down-text {
+  font-size: 1em;
+}
+
 #rsvp-button-wrapper {
-  padding: 2.5em 0;
+  padding-top: 2.5em;
 }
 
 #rsvp-button {
@@ -287,7 +290,7 @@ h1, h2, h3, h4, p, div {
   background-size: cover;
   top: 14%;
   left: 75%;
-  height: 86%;
+  height: 87%;
   width: 170%;
   opacity: 0.5;
   transform: translateX(-75%);
@@ -343,19 +346,19 @@ h1, h2, h3, h4, p, div {
 }
 
 .info-address-wrapper {
+  text-decoration: none;
   text-align: center;
   position: absolute;
   display: block;
   left: 50%;
   width: 100%;
-  bottom: 20%;
+  bottom: 14%;
   transform: translateX(-50%);
 }
 
 .info-address {
-  text-decoration: none;
   color: #000;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .info-address:active, .info-address:focus, .info-address:hover,
@@ -364,25 +367,25 @@ h1, h2, h3, h4, p, div {
   color: #6f4e37;
 }
 
-.info-calendar-link {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.3em;
-}
-
 .calendar-link-wrapper {
+  text-decoration: none;
   text-align: center;
   position: absolute;
   display: block;
   left: 50%;
   width: 100%;
-  bottom: 10%;
+  bottom: 6%;
   transform: translateX(-50%);
+}
+
+.info-calendar-link {
+  color: #000;
+  font-size: 1.3em;
 }
 
 /* Registry */
 #registry {
-  height: 33em;
+  height: 34em;
   padding: 10%;
   border-bottom: 1px solid #ffebed;
 }
@@ -401,11 +404,9 @@ h1, h2, h3, h4, p, div {
 }
 
 #bbb {
-  background-image: url(img/bb&b.png);
-  background-size: cover;
-  width: 65%;
+  width: 70%;
+  display: block;
   margin: auto;
-  height: 10vh;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -660,23 +661,23 @@ h1, h2, h3, h4, p, div {
   }
 
   .rsvp-time-unit {
-    font-size: 1.7em;
+    font-size: 2.6em;
   }
 
-  #rsvp-count-down-table {
+  .rsvp-count-down-text, #footer-text {
     font-size: 1.1em;
   }
 
-  #rsvp-button, #header-message, #heading-date, .info-address, .info-table, .info-calendar-link, #registry-p, #rsvp-form-date, .label, .form-control, .radio-btns, #submit-button, #thank-you, #go-back-button {
+  #rsvp-button, #header-message, #heading-date, .info-table, .info-calendar-link, #registry-p, #rsvp-form-date, .label, .form-control, .radio-btns, #submit-button, #thank-you, #go-back-button {
     font-size: 1.4em;
+  }
+
+  .info-address {
+    font-size: 1.5em;
   }
 
   #registry-p {
     margin-bottom: 2em;
-  }
-
-  #footer-text {
-    font-size: 1.1em;
   }
 }
 
@@ -710,24 +711,136 @@ h1, h2, h3, h4, p, div {
   }
 
   .rsvp-time-unit {
-    font-size: 1.8em;
+    font-size: 3em;
   }
 
-  #rsvp-count-down-table {
+  .rsvp-count-down-text, #footer-text {
     font-size: 1.2em;
   }
 
-  #rsvp-button, #header-message, #heading-date, .info-address, .info-table, .info-calendar-link, #registry-p, #rsvp-form-date, .label, .form-control, .radio-btns, #submit-button, #thank-you, #go-back-button {
+  #rsvp-button, #header-message, #heading-date, .info-table, .info-calendar-link, #registry-p, #rsvp-form-date, .label, .form-control, .radio-btns, #submit-button, #thank-you, #go-back-button {
     font-size: 1.5em;
   }
 
-  #footer-text {
-    font-size: 1.2em;
+  .info-address {
+    font-size: 1.6em;
   }
 }
 
 /* for iPad */
 @media only screen and (min-width: 760px) {
+  #background-img-wrapper, #img-overlay, #header-content-wrapper, #rsvp, #schedule, #registry {
+    height: 60em;
+  }
+
+  #background-img-main {
+    top: -10%;
+    left: 38%;
+    transform: translateX(-38%);
+    height: 110%;
+    width: 217vw;
+  }
+
+  #header-content-wrapper, #rsvp, #schedule, #registry {
+    padding: 7%;
+  }
+
+  #header-text {
+    padding-top: 77%;
+  }
+
+  #header-message, #registry-p {
+    line-height: 1.7em;
+  }
+
+  #header-left-indent {
+    padding-top: .1em;
+    padding-left: 7vw;
+  }
+
+  #header-names, .heading {
+    font-size: 3.5em;
+  }
+
+  .menu-list-item, #rsvp-location {
+    font-size: 1.8em;
+  }
+
+  #overlay-heading, #rsvp-date {
+    font-size: 2.5em;
+  }
+
+  #rsvp-button, #header-message, #heading-date, .info-table, .info-calendar-link, #registry-p, #rsvp-form-date, .label, .form-control, .radio-btns, #submit-button, #thank-you, #go-back-button {
+    font-size: 2.2em;
+  }
+
+  .info-address {
+    font-size: 2.3em;
+  }
+
+  #rsvp-location {
+    padding: 1em 0;
+  }
+
+  #rsvp-count-down-table {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .rsvp-count-down-text, #footer-text {
+    font-size: 1.8em;
+  }
+
+  .rsvp-time-unit {
+    font-size: 4em;
+  }
+
+  #rsvp-button-wrapper {
+    padding-top: 5em;
+  }
+
+  #hearts-clipart {
+    left: 50%;
+    top: 25%;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  #background-img-schedule {
+    background-image: url(img/on-bridge.jpeg);
+    position: absolute;
+    background-size: cover;
+    top: 14%;
+    left: 50%;
+    height: 87%;
+    width: 170%;
+    opacity: 0.5;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .info-address-wrapper {
+    width: 80%;
+  }
+
+  .calendar-link-wrapper {
+    width: 70%;
+  }
+
+  .table-data {
+    width: 55%;
+  }
+
+  #bbb {
+    width: 60%;
+  }
 }
 
 /* for iPad Pro and Desktops */
