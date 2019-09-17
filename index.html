@@ -15,11 +15,13 @@
     <div id="background-img-main"></div>
   </div>
   <div id="img-overlay"></div>
-  <div id="header-text-wrapper">
-    <div id="header-names">Паша
-      <div class="header-left-indent">и Аня</div>
+  <div id="header-content-wrapper">
+    <div id="header-text">
+      <div id="header-names">Паша
+        <div id="header-left-indent">и Аня</div>
+      </div>
+      <div id="header-message">«Смотрите, какую любовь<br>дал нам Отец...»<br>1Ин. 3:1</div>
     </div>
-    <div id="header-message">«Смотрите, какую любовь<br>дал нам Отец...»<br>1Ин. 3:1</div>
   </div>
   <div id="menu-icon" onclick="openMenu()">
     <div class="menu-icon-bar"></div>
@@ -40,6 +42,7 @@
       </div>
     </div>
   </div>
+  <div id="exit-menu" onclick="closeMenu()"></div>
 </header>
 
 <main>
@@ -49,7 +52,22 @@
     <div id="rsvp-wrapper">
       <div id="rsvp-date">Суббота, 12 октября, 2019г.</div>
       <div id="rsvp-location">Harrisburg, Pennsylvania</div>
-      <div id="rsvp-count-down">15 дней, 13 часов, 3 минуты, 3 секунды</div>
+      <table id="rsvp-count-down-table">
+        <tbody>
+        <tr>
+          <td id="days" class="rsvp-time-unit">00</td>
+          <td id="hours" class="rsvp-time-unit">00</td>
+          <td id="minutes" class="rsvp-time-unit">00</td>
+          <td id="seconds" class="rsvp-time-unit">00</td>
+        </tr>
+        <tr>
+          <td class="rsvp-count-down-text"> дней</td>
+          <td class="rsvp-count-down-text"> час.</td>
+          <td class="rsvp-count-down-text"> мин.</td>
+          <td class="rsvp-count-down-text"> сек.</td>
+        </tr>
+        </tbody>
+      </table>
       <div id="rsvp-button-wrapper">
         <a id="rsvp-button" href="/rsvp.html">Ответить</a>
       </div>
@@ -92,7 +110,7 @@
   </div>
 
   <div id="registry">
-    <div class="heading">Реестр</div>
+    <div class="heading" id="registry-heading">Реестр</div>
     <p id="registry-p">Ваше присутствие на нашей свадьбе - величайший подарок, который мы когда-либо могли получить.
       Если вы хотите почтить нас вкладом, мы предпочитаем наличные. Однако, если это не ваша чашка чая, вы можете
       попробовать наш реестр подарков ниже.</p>

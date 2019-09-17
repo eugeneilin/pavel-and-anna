@@ -2,12 +2,41 @@
 function openMenu() {
   document.getElementById('menu-overlay-wrapper').style.display = 'block';
   document.getElementById('menu-icon').style.display = 'none';
+  document.getElementById('exit-menu').style.display = 'block';
 }
 
 function closeMenu() {
   document.getElementById('menu-overlay-wrapper').style.display = 'none';
   document.getElementById('menu-icon').style.display = 'block';
+  document.getElementById('exit-menu').style.display = 'none';
 }
+
+// Set the date we're counting down to
+let countDownDate = new Date("Oct 12, 2019 10:00:00").getTime();
+
+// Update the count down every 1 second
+let x = setInterval(function () {
+
+  let now = new Date().getTime();
+
+  let distance = countDownDate - now;
+
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("rsvp-count-down").innerHTML = "EXPIRED";
+  }
+}, 1000);
 
 // Firebase configuration
 const firebaseConfig = {
@@ -52,8 +81,9 @@ function submitForm(e) {
     document.getElementById('thank-you-wrapper').style.display = 'none';
     document.getElementById('rsvp-form').reset();
     document.getElementById('submit-button-wrapper').style.display = 'none';
+    document.getElementById('rsvp-form').style.display = 'none';
     document.getElementById('go-back-button-wrapper').style.display = 'block';
-  }, 7000);
+  }, 4000);
 }
 
 // Function to get form values
