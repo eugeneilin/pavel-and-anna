@@ -43,7 +43,8 @@ h1, h2, h3, h4, p, div {
 #img-overlay {
   width: 100vw;
   height: 33em;
-  background-color: rgba(0, 0, 0, 0.185);
+  background-color: transparent;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent, transparent, transparent);
   position: absolute;
   top: 0;
   left: 0;
@@ -160,7 +161,7 @@ h1, h2, h3, h4, p, div {
 #header-content-wrapper {
   padding: 10%;
   position: relative;
-  height: 33rem;
+  height: 33em;
 }
 
 #header-text {
@@ -171,7 +172,7 @@ h1, h2, h3, h4, p, div {
 
 #header-names {
   color: white;
-  font-size: 2rem;
+  font-size: 2em;
   font-style: italic;
 }
 
@@ -312,7 +313,7 @@ h1, h2, h3, h4, p, div {
 }
 
 #schedule-info {
-  text-shadow: 0 0.05em .4em #ffebed;
+  text-shadow: 0 0.05em .4em white;
 }
 
 .info-table {
@@ -841,17 +842,134 @@ h1, h2, h3, h4, p, div {
   #bbb {
     width: 60%;
   }
+
+  #background-img-rsvp-wrapper {
+    height: 29em;
+  }
+
+  #background-img-rsvp {
+    left: -2em;
+    height: 151%;
+  }
+
+  #rsvp-form-date {
+    margin-bottom: 3em;
+  }
 }
 
 /* for iPad Pro and Desktops */
 @media only screen and (min-width: 800px) {
   #header {
-    width: 50%;
+    width: 60vw;
     position: fixed;
   }
 
-  #rsvp, #schedule, #registry {
-    position: relative;
-    margin-left: 50%;
+  #background-img-wrapper, #img-overlay, #header-content-wrapper, #rsvp, #schedule, #registry {
+    height: 100vh;
   }
+
+  #background-img-wrapper {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #background-img-main {
+    top: -4%;
+    left: -27%;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    height: 104%;
+    width: 166%;
+  }
+
+  #img-overlay {
+    width: 100%;
+  }
+
+  #header-text {
+    padding-top: 71%;
+  }
+
+  #header-names {
+    font-size: 2em;
+  }
+
+  #header-message {
+    font-size: 1.3em;
+  }
+
+  #rsvp, #schedule, #registry, #footer {
+    margin-left: 60vw;
+  }
+
+  #rsvp-button, #header-message, #heading-date, .info-table, .info-calendar-link, #registry-p, #rsvp-form-date, .label, .form-control, .radio-btns, #submit-button, #thank-you, #go-back-button {
+    font-size: 1.3em;
+  }
+
+  #hearts-clipart {
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    top: 7%;
+    left: 44%;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  #rsvp-wrapper {
+    padding: 0;
+  }
+
+  #rsvp-date {
+    font-size: 1.35em;
+  }
+
+  #rsvp-location {
+    font-size: 1.1em;
+    padding: 0.8em 0;
+  }
+
+  #rsvp-count-down-table {
+    width: 100%;
+  }
+
+  .rsvp-time-unit {
+    font-size: 2em;
+  }
+
+  .rsvp-count-down-text {
+    font-size: 1em;
+  }
+
+  #rsvp-button-wrapper {
+    padding-top: 2.5em;
+  }
+
+  #header-content-wrapper, #rsvp, #schedule, #registry {
+    padding: 5vh;
+  }
+
+  #background-img-schedule {
+    display: none;
+  }
+
+  .heading {
+    font-size: 2em;
+  }
+
+  .table-data {
+    width: auto;
+  }
+
+  .info-address {
+    font-size: 1.4em;
+  }
+
 }
