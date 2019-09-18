@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 /* Reset codes */
 * {
@@ -13,7 +13,7 @@ html, body {
   min-width: 320px; /* built with iPhone 5/SE dimensions */
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, p, div {
@@ -21,28 +21,30 @@ h1, h2, h3, h4, p, div {
   padding: 0;
 }
 
+.primary-text {
+}
+
+.secondary-text {
+}
+
 /* Header */
 #background-img-wrapper {
   position: absolute;
-  height: 33em;
+  height: 30em;
   width: 100%;
   overflow: hidden;
 }
 
 #background-img-main {
-  background-image: url(img/back-img-main-medium.jpg);
-  position: absolute;
+  background-image: url(img/back-img-main.JPG);
   background-size: cover;
-  top: -3.5em;
-  left: 71%;
-  transform: translateX(-71%);
-  height: 111%;
-  width: 196vw;
+  height: 100%;
+  width: 100%;
 }
 
 #img-overlay {
   width: 100vw;
-  height: 33em;
+  height: 30em;
   background-color: transparent;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent, transparent, transparent);
   position: absolute;
@@ -103,7 +105,7 @@ h1, h2, h3, h4, p, div {
 
 #overlay-heading {
   font-size: 1.5em;
-  font-family: 'Alegreya', serif;
+  font-family: 'Book Antiqua', serif;
   font-style: italic;
   color: white;
   background-color: #6f4e37;
@@ -161,37 +163,33 @@ h1, h2, h3, h4, p, div {
 #header-content-wrapper {
   padding: 10%;
   position: relative;
-  height: 33em;
+  height: 30em;
 }
 
 #header-text {
   width: 100%;
-  font-family: 'Alegreya', serif;
-  padding-top: 106%;
+  font-family: 'Book Antiqua', serif;
+  padding-top: 126%;
 }
 
 #header-names {
   color: white;
   font-size: 2em;
   font-style: italic;
+  text-indent: .5em;
 }
 
 #header-message {
   color: white;
-  padding-top: 0.5em;
-  font-size: 1.3em;
-  line-height: 1.6em;
+  padding-top: 0.8em;  font-size: 1.1em;
+  line-height: 1.2em;
   text-align: center;
   text-shadow: 0 0.15em 0.3em black;
 }
 
-#header-left-indent {
-  padding-left: 10vw;
-}
-
 /* RSVP */
 #rsvp {
-  height: 33em;
+  height: 30em;
   border-bottom: 1px solid #ffebed;
   padding: 10%;
   position: relative;
@@ -203,23 +201,29 @@ h1, h2, h3, h4, p, div {
 }
 
 #hearts-clipart {
-  background-image: url(img/hearts-clipart.jpg);
-  height: 84%;
+  background-image: url(img/two-hearts.jpg);
+  height: 70%;
   width: 100%;
   position: absolute;
-  top: 14%;
-  left: 40%;
-  transform: translateX(-20%);
-  opacity: .35;
+  top: 0%;
+  left: 22%;
+  opacity: .5;
   z-index: -1;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
+#left {
+  padding: .5em 0;
+  /*border-bottom: 1px solid #6f4e374f;*/
+  font-size: 1.3em;
+  text-align: center;
+}
+
 #rsvp-date {
   font-size: 1.35em;
-  font-family: 'Alegreya', serif;
+  font-family: 'Book Antiqua', serif;
 }
 
 #rsvp-location {
@@ -229,6 +233,7 @@ h1, h2, h3, h4, p, div {
 
 #rsvp-count-down-table {
   width: 100%;
+  padding-top: 1em;
 }
 
 .rsvp-time-unit {
@@ -275,7 +280,7 @@ h1, h2, h3, h4, p, div {
 
 /* Schedule */
 #schedule {
-  height: 33em;
+  height: 30em;
   padding: 10%;
   border-bottom: 1px solid #ffebed;
   position: relative;
@@ -286,15 +291,15 @@ h1, h2, h3, h4, p, div {
 }
 
 #background-img-schedule {
-  background-image: url(img/on-bridge.jpeg);
+  background-image: url(img/on-bridge-sepia.jpg);
   position: absolute;
   background-size: cover;
-  top: 14%;
-  left: 75%;
-  height: 87%;
-  width: 170%;
-  opacity: 0.5;
-  transform: translateX(-75%);
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  transform: translateX(-50%);
   z-index: -1;
 }
 
@@ -302,40 +307,44 @@ h1, h2, h3, h4, p, div {
   text-align: center;
   font-size: 2em;
   font-style: italic;
-  font-family: 'Alegreya', serif;
+  font-family: 'Book Antiqua', serif;
 }
 
 #heading-date {
-  padding: .5em 0 0.1em;
+  padding: 1.5em 0 0;
   border-bottom: 1px solid #6f4e374f;
-  font-size: 1.3em;
-  text-align: center;
+  font-size: 1.1em;
+  text-indent: 2em;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #schedule-info {
-  text-shadow: 0 0.05em .4em white;
+  text-shadow: 0 0.05em 1em white;
 }
 
 .info-table {
-  padding-top: .5em;
+  padding-top: 9em;
   width: 100%;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 .info-time {
   font-size: 1em;
   text-align: center;
+  font-weight: bold;
 }
 
 .info-time-of-day {
   text-align: center;
-  font-size: .9em;
+  font-size: .7em;
   padding: 0;
-  line-height: 0.7em;
+  line-height: 0.4em;
 }
 
 .info-headings {
-  font-weight: bold;
 }
 
 .table-data {
@@ -353,13 +362,13 @@ h1, h2, h3, h4, p, div {
   display: block;
   left: 50%;
   width: 100%;
-  bottom: 14%;
+  bottom: 12%;
   transform: translateX(-50%);
 }
 
 .info-address {
   color: #000;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .info-address:active, .info-address:focus, .info-address:hover,
@@ -375,13 +384,13 @@ h1, h2, h3, h4, p, div {
   display: block;
   left: 50%;
   width: 100%;
-  bottom: 6%;
+  bottom: 4%;
   transform: translateX(-50%);
 }
 
 .info-calendar-link {
   color: #000;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 /* Registry */
@@ -400,7 +409,7 @@ h1, h2, h3, h4, p, div {
   padding: .5em 0 0;
   text-indent: 1.7em;
   line-height: 1.6em;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 1em;
 }
 
@@ -412,13 +421,13 @@ h1, h2, h3, h4, p, div {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-filter: contrast(160%) brightness(95%) hue-rotate(176deg);
-  filter: contrast(160%) brightness(95%) hue-rotate(176deg);
+  -webkit-filter: contrast(177%) brightness(75%) hue-rotate(176deg);;
+  filter: contrast(177%) brightness(75%) hue-rotate(176deg);
 }
 
 /* Moments */
 #moments {
-  height: 33em;
+  height: 30em;
   border-bottom: 1px solid #ffebed;
   padding: 10%;
   position: relative;
@@ -497,7 +506,7 @@ h1, h2, h3, h4, p, div {
 }
 
 #background-img-rsvp {
-  background-image: url(img/before-line-of-trees.jpeg);
+  background-image: url(img/before-trees-sepia.jpg);
   position: absolute;
   background-size: cover;
   top: -1em;
@@ -507,7 +516,7 @@ h1, h2, h3, h4, p, div {
 }
 
 #rsvp-form-date {
-  font-family: 'Alegreya', serif;
+  font-family: 'Book Antiqua', serif;
   font-size: 1.3em;
   margin-bottom: 2em;
   text-align: center;
@@ -532,7 +541,7 @@ h1, h2, h3, h4, p, div {
   margin-bottom: 0.9em;
   padding: 0.4em 1em;
   resize: none;
-  font-family: 'Alegreya', serif;
+  font-family: 'Book Antiqua', serif;
 }
 
 #rsvp-question {
@@ -542,7 +551,7 @@ h1, h2, h3, h4, p, div {
 .radio-btns {
   font-size: 1.3em;
   padding: .3em;
-  font-family: 'Alegreya', serif;
+  font-family: 'Book Antiqua', serif;
 }
 
 #submit-button-wrapper {
@@ -552,7 +561,7 @@ h1, h2, h3, h4, p, div {
 
 #submit-button {
   font-size: 1.3em;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Book Antiqua', sans-serif;
   text-decoration: none;
   width: 100%;
   border: solid black 1px;
@@ -588,7 +597,7 @@ h1, h2, h3, h4, p, div {
 
 #thank-you {
   font-size: 1.3em;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Book Antiqua', sans-serif;
   width: 100%;
   border: solid #6f4e37 1px;
   border-radius: .2em;
@@ -811,7 +820,7 @@ h1, h2, h3, h4, p, div {
   }
 
   #background-img-schedule {
-    background-image: url(img/on-bridge.jpeg);
+    background-image: url(img/on-bridge-sepia.jpg);
     position: absolute;
     background-size: cover;
     top: 14%;
