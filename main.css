@@ -369,7 +369,7 @@ h1, h2, h3, h4, p, div {
 
 .info-address {
   color: #000;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .info-address:active, .info-address:focus, .info-address:hover,
