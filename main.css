@@ -1,3 +1,4 @@
+ @import url('http://allfont.net/allfont.css?fonts=book-antiqua');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 /* Reset codes */
@@ -105,7 +106,7 @@ h1, h2, h3, h4, p, div {
 
 #overlay-heading {
   font-size: 1.5em;
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', arial;
   font-style: italic;
   color: white;
   background-color: #6f4e37;
@@ -168,7 +169,7 @@ h1, h2, h3, h4, p, div {
 
 #header-text {
   width: 100%;
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', arial;
   padding-top: 126%;
 }
 
@@ -223,7 +224,7 @@ h1, h2, h3, h4, p, div {
 
 #rsvp-date {
   font-size: 1.35em;
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', arial;
 }
 
 #rsvp-location {
@@ -307,7 +308,7 @@ h1, h2, h3, h4, p, div {
   text-align: center;
   font-size: 2em;
   font-style: italic;
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', arial;
 }
 
 #heading-date {
@@ -368,7 +369,7 @@ h1, h2, h3, h4, p, div {
 
 .info-address {
   color: #000;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .info-address:active, .info-address:focus, .info-address:hover,
@@ -516,7 +517,7 @@ h1, h2, h3, h4, p, div {
 }
 
 #rsvp-form-date {
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', arial;
   font-size: 1.3em;
   margin-bottom: 2em;
   text-align: center;
@@ -541,7 +542,7 @@ h1, h2, h3, h4, p, div {
   margin-bottom: 0.9em;
   padding: 0.4em 1em;
   resize: none;
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', arial;
 }
 
 #rsvp-question {
@@ -551,7 +552,7 @@ h1, h2, h3, h4, p, div {
 .radio-btns {
   font-size: 1.3em;
   padding: .3em;
-  font-family: 'Book Antiqua', serif;
+  font-family: 'Book Antiqua', arial;
 }
 
 #submit-button-wrapper {
@@ -561,7 +562,7 @@ h1, h2, h3, h4, p, div {
 
 #submit-button {
   font-size: 1.3em;
-  font-family: 'Book Antiqua', sans-serif;
+  font-family: 'Book Antiqua', arial;
   text-decoration: none;
   width: 100%;
   border: solid black 1px;
@@ -597,7 +598,7 @@ h1, h2, h3, h4, p, div {
 
 #thank-you {
   font-size: 1.3em;
-  font-family: 'Book Antiqua', sans-serif;
+  font-family: 'Book Antiqua', arial;
   width: 100%;
   border: solid #6f4e37 1px;
   border-radius: .2em;
