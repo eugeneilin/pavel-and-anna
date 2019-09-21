@@ -1,4 +1,3 @@
- @import url('http://allfont.net/allfont.css?fonts=book-antiqua');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 /* Reset codes */
@@ -106,7 +105,7 @@ h1, h2, h3, h4, p, div {
 
 #overlay-heading {
   font-size: 1.5em;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
   font-style: italic;
   color: white;
   background-color: #6f4e37;
@@ -169,7 +168,7 @@ h1, h2, h3, h4, p, div {
 
 #header-text {
   width: 100%;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
   padding-top: 126%;
 }
 
@@ -198,8 +197,7 @@ h1, h2, h3, h4, p, div {
 
 #rsvp-wrapper {
   text-align: center;
-  padding-top: 40%;
-}
+padding-top: 100%;}
 
 #hearts-clipart {
   background-image: url(img/two-hearts.jpg);
@@ -207,7 +205,7 @@ h1, h2, h3, h4, p, div {
   width: 100%;
   position: absolute;
   top: 0%;
-  left: 22%;
+  left: 12%;
   opacity: .5;
   z-index: -1;
   background-repeat: no-repeat;
@@ -224,7 +222,7 @@ h1, h2, h3, h4, p, div {
 
 #rsvp-date {
   font-size: 1.35em;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
 }
 
 #rsvp-location {
@@ -234,8 +232,9 @@ h1, h2, h3, h4, p, div {
 
 #rsvp-count-down-table {
   width: 100%;
+  color: white;
   padding-top: 1em;
-}
+  text-shadow: 1px 1px 2px black;}
 
 .rsvp-time-unit {
   font-size: 2em;
@@ -299,7 +298,6 @@ h1, h2, h3, h4, p, div {
   left: 50%;
   height: 100%;
   width: 100%;
-  opacity: .5;
   transform: translateX(-50%);
   z-index: -1;
 }
@@ -308,7 +306,7 @@ h1, h2, h3, h4, p, div {
   text-align: center;
   font-size: 2em;
   font-style: italic;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
 }
 
 #heading-date {
@@ -426,6 +424,14 @@ h1, h2, h3, h4, p, div {
   filter: contrast(177%) brightness(75%) hue-rotate(176deg);
 }
 
+
+#quote {
+  margin: 1em;
+  border: dotted brown 1px;
+  padding: 1em;
+  text-align: center;
+}
+
 /* Moments */
 #moments {
   height: 30em;
@@ -517,7 +523,7 @@ h1, h2, h3, h4, p, div {
 }
 
 #rsvp-form-date {
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
   font-size: 1.3em;
   margin-bottom: 2em;
   text-align: center;
@@ -542,7 +548,7 @@ h1, h2, h3, h4, p, div {
   margin-bottom: 0.9em;
   padding: 0.4em 1em;
   resize: none;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
 }
 
 #rsvp-question {
@@ -552,7 +558,7 @@ h1, h2, h3, h4, p, div {
 .radio-btns {
   font-size: 1.3em;
   padding: .3em;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
 }
 
 #submit-button-wrapper {
@@ -562,7 +568,7 @@ h1, h2, h3, h4, p, div {
 
 #submit-button {
   font-size: 1.3em;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
   text-decoration: none;
   width: 100%;
   border: solid black 1px;
@@ -598,7 +604,7 @@ h1, h2, h3, h4, p, div {
 
 #thank-you {
   font-size: 1.3em;
-  font-family: 'Book Antiqua', arial;
+  font-family: "Book Antiqua", Palatino, serif;
   width: 100%;
   border: solid #6f4e37 1px;
   border-radius: .2em;
