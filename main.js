@@ -12,7 +12,7 @@ function closeMenu() {
 }
 
 // Set the date we're counting down to
-let countDownDate = new Date("Oct 12, 2019 10:00:00").getTime();
+let countDownDate = new Date('Oct 12, 2019 10:00:00').getTime();
 
 // Update the count down every 1 second
 let x = setInterval(function () {
@@ -26,17 +26,36 @@ let x = setInterval(function () {
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+  document.getElementById('days').innerHTML = days;
+  document.getElementById('hours').innerHTML = hours;
+  document.getElementById('minutes').innerHTML = minutes;
+  document.getElementById('seconds').innerHTML = seconds;
 
   // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("rsvp-count-down").innerHTML = "EXPIRED";
-  }
+  // if (distance < 0) {
+  //   clearInterval(x);
+  //   document.getElementById("rsvp-count-down").innerHTML = "EXPIRED";
+  // }
 }, 1000);
+
+// 'Moments' controls
+function openMoments() {
+  document.getElementById('header').style.display = 'none';
+  document.getElementById('schedule').style.display = 'none';
+  document.getElementById('rsvp').style.display = 'none';
+  document.getElementById('registry').style.display = 'none';
+  document.getElementById('footer').style.display = 'none';
+  document.getElementById('moments').style.display = 'block';
+}
+
+function closeMoments() {
+  document.getElementById('header').style.display = 'block';
+  document.getElementById('schedule').style.display = 'block';
+  document.getElementById('rsvp').style.display = 'block';
+  document.getElementById('registry').style.display = 'block';
+  document.getElementById('footer').style.display = 'block';
+  document.getElementById('moments').style.display = 'none';
+}
 
 // Firebase configuration
 const firebaseConfig = {
@@ -81,7 +100,7 @@ function submitForm(e) {
     document.getElementById('thank-you-wrapper').style.display = 'none';
     document.getElementById('rsvp-form').reset();
     document.getElementById('submit-button-wrapper').style.display = 'none';
-    document.getElementById('rsvp-form').style.display = 'none';
+    document.getElementById('rsvp-form').style.opacity = '.4';
     document.getElementById('go-back-button-wrapper').style.display = 'block';
   }, 4000);
 }
