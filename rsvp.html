@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="rsvp-body">
 
 <head>
   <title>Павел Прутяну | Анна Ильин</title>
@@ -12,41 +12,44 @@
 
 <main id="rsvp-section">
   <div id="rsvp-form-wrapper">
-    <div id="background-img-rsvp-wrapper">
-      <div id="background-img-rsvp"></div>
+    <div id="rsvp-desktop-view">
+      <div id="background-img-rsvp-wrapper">
+        <div id="background-img-rsvp"></div>
+      </div>
+      <div id="rsvp-form-date" class="primary-font secondary-text-size desktop-view">Суббота, 12 октября, 2019г.</div>
     </div>
-    <div id="rsvp-form-date">Суббота, 12 октября, 2019г.</div>
     <form method="post" action="" id="rsvp-form">
-      <label class="label">Ваше имя и фамилия</label>
-      <input name="name" minlength="2" type="text" class="form-control" placeholder="Имя Фамилия" required
+      <label class="secondary-text-size">Ваше имя и фамилия</label>
+      <input name="name" minlength="2" type="text" class="form-control primary-font secondary-text-size" placeholder="Имя Фамилия" required
              id="name">
-      <label class="label">Сколько гостей с Вами?</label>
-      <input name="other-guests-number" type="number" min="0" max="20" class="form-control"
+      <label class="secondary-text-size">Сколько гостей с Вами?</label>
+      <input name="other-guests-number" type="number" min="0" max="20" class="form-control primary-font secondary-text-size"
              placeholder="#" id="other-guests-number">
-      <label class="label">Имена дополнительных гостей</label>
-      <input name="other-guests-names" minlength="5" type="text" class="form-control"
+      <label class="secondary-text-size">Имена дополнительных гостей</label>
+      <input name="other-guests-names" minlength="5" type="text" class="form-control primary-font secondary-text-size"
              placeholder="Имя Фамилия, и т.д." id="other-guests-names">
-      <label class="label">Оставить сообщение</label>
-      <textarea name="message" class="form-control" placeholder="(Необязательно)" rows="2" id="message"></textarea>
-      <div id="rsvp-question"><label class="label">Будете ли Вы на нашем торжестве?</label>
+      <label class="secondary-text-size">Оставить сообщение</label>
+      <textarea name="message" class="form-control primary-font secondary-text-size" placeholder="(Необязательно)" rows="2" id="message"></textarea>
+      <div id="rsvp-question">
+        <label class="secondary-text-size">Будете ли Вы на нашем торжестве?</label>
         <div class="radio-btns">
           <input type="radio" id="attending" name="reply" value="attending" required>
-          <label for="attending">Да, с радостью</label>
+          <label class="secondary-text-size" for="attending">Да, с радостью</label>
         </div>
         <div class="radio-btns">
           <input type="radio" id="not-attending" name="reply" value="not-attending" required>
-          <label for="not-attending">К сожаленью, нет</label>
+          <label class="secondary-text-size" for="not-attending">К сожаленью, нет</label>
         </div>
         <div id="submit-button-wrapper">
-          <input type="submit" class="submit" value="Ответить" id="submit-button">
+          <input type="submit" class="submit button-text-size" value="Ответить" id="submit-button">
         </div>
       </div>
       <div id="thank-you-wrapper">
-        <div id="thank-you">Спасибо за ответ!</div>
+        <div id="thank-you" class="button-text-size">Спасибо за ответ!</div>
       </div>
     </form>
     <div id="go-back-button-wrapper">
-      <a id="go-back-button" href="index.html">« Назад</a>
+      <a id="go-back-button" href="index.html" class="button-text-size">« Назад</a>
     </div>
   </div>
 </main>

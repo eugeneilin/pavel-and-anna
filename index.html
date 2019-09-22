@@ -6,37 +6,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="main.css" rel="stylesheet">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="jquery-main.js"></script> -->
 </head>
 
 <body>
 
 <header id="header">
   <div id="background-img-wrapper">
-    <div id="background-img-main"></div>
+    <img class="background-img-main" id="main-img-mobile" src="img/back-img-main-mobile.JPG"/>
+    <img class="background-img-main" id="main-img" src="img/back-img-main.JPG"/>
   </div>
   <div id="img-overlay"></div>
   <div id="header-content-wrapper">
-    <div id="header-text">
-      <div id="header-names">Паша & Aня</div>
+    <div id="header-vertical-alignment">
+      <div id="header-text">
+        <div id="header-names" class="primary-font indent">Паша & Aня</div>
+      </div>
+      <div id="header-message" class="secondary-text-size">«Смотрите, какую любовь дал нам Отец...» 1Ин. 3:1</div>
     </div>
-    <div id="header-message">«Смотрите, какую любовь дал нам Отец...» 1Ин. 3:1</div>
   </div>
   <div id="menu-icon" onclick="openMenu()">
-    <div class="menu-icon-bar"></div>
-    <div class="menu-icon-bar"></div>
-    <div class="menu-icon-bar"></div>
+    <div id="menu-label-wrapper">
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+      <div id="menu-label" class="secondary-text-size">Menu</div>
+    </div>
   </div>
   <div id="menu-overlay-wrapper">
     <div id="menu-overlay" onclick="closeMenu()">
       <div id="overlay-heading-wrapper">
-        <a id="overlay-heading" href="#" onclick="closeMenu()">Паша & Аня</a>
+        <a id="overlay-heading" href="#" onclick="closeMenu()" class="primary-font">Паша & Аня</a>
       </div>
       <div id="overlay-list">
-        <a class="menu-list-item" href="#" onclick="closeMenu()">Добро пожаловать!</a>
-        <a class="menu-list-item" href="#rsvp" onclick="closeMenu()">Ответить</a>
-        <a class="menu-list-item" href="#schedule" onclick="closeMenu()">Расписание</a>
-        <a class="menu-list-item" href="#registry" onclick="closeMenu()">Реестр</a>
-        <a class="menu-list-item" href="#" onclick="closeMenu()">Фото</a>
+        <a class="menu-list-item secondary-text-size" href="#" onclick="closeMenu()">Добро пожаловать!</a>
+        <a class="menu-list-item secondary-text-size" href="#schedule" onclick="closeMenu()">Программа</a>
+        <a class="menu-list-item secondary-text-size" href="#rsvp" onclick="closeMenu()">Ответ</a>
+        <a class="menu-list-item secondary-text-size" href="#registry" onclick="closeMenu()">Помощь</a>
+        <a id="moments-link" class="menu-list-item secondary-text-size" href="#" onclick="closeMenu(); openMoments()">Фото</a>
       </div>
     </div>
   </div>
@@ -45,85 +53,102 @@
 
 <main>
 
-  <div id="schedule">
-    <div id="hearts-clipart"></div>
-    <div>
-      <!--<div class="heading">Расписание</div>-->
-      <div id="heading-date">Суббота<div class="bold">12 октября, 2019 года</div></div>
-    </div>
-    <div id="schedule-info">
+  <div id="schedule" class="fade">
+    <div id="schedule-content-wrapper">
+      <div id="background-img-schedule"></div>
+      <div id="heading-date" class="secondary-text-size indent">Суббота<div class="bold">12 октября, 2019 года</div></div>
+      <div id="schedule-info" class="secondary-text-size">
+        <table class="info-table indent">
+          <tr>
+            <td class="bold table-line-padding">10:00</td>
+            <td class="table-line-padding">Венчание</td>
+          </tr>
+          <tr>
+            <td class="info-time-of-day">a.m.</td>
+          </tr>
+          <tr>
+            <td class="bold table-line-padding">1:00</td>
+            <td class="table-line-padding">Банкет</td>
+          </tr>
+          <tr>
+            <td class="info-time-of-day">p.m.</td>
+          </tr>
+        </table>
 
-      <table class="info-table">
-        <tr>
-          <td class="info-time table-data">10:00</td>
-          <td class="info-headings table-data">Венчание</td>
-        </tr>
-        <tr>
-          <td class="info-time-of-day">a.m.</td>
-        </tr>
-        <tr>
-          <td class="info-time table-data info-data-line-2">1:00</td>
-          <td class="info-headings table-data info-data-line-2">Банкет</td>
-        </tr>
-        <tr>
-          <td class="info-time-of-day">p.m.</td>
-        </tr>
-      </table>
-
-      <a href="#" class="info-address-wrapper">
-        <div class="info-address">Slate Hill Mennonite Church<br>1352 Slate Hill Rd<br>Camp
-          Hill, PA 17011
+        <div id="address-and-calendar-wrapper">
+          <a class="address-and-calendar" target="_blank" href="https://goo.gl/maps/pfQhGWnVTY7oUdAm6">
+            Slate Hill Mennonite Church<br>1352 Slate Hill Rd<br>Camp Hill, PA 17011</a>
+          <!-- <a class="address-and-calendar" href="#">Добавить в календарь</a> -->
         </div>
-      </a>
-      <a href="#" class="calendar-link-wrapper">
-        <div class="info-calendar-link">Добавить в календарь</div>
-      </a>
-    </div>
-  </div>
-
-  <div id="rsvp">
-    <div id="background-img-schedule"></div>
-    <div class="latin">Amor omnia vincit!</div>
-    <div id="rsvp-wrapper">
-      <!--<div id="rsvp-date">Суббота, 12 октября, 2019г.</div>-->
-      <!--<div id="rsvp-location">Harrisburg, Pennsylvania</div>-->
-      <!-- <div id="left">осталось</div> -->
-      <table id="rsvp-count-down-table">
-        <tbody>
-        <tr>
-          <td id="days" class="rsvp-time-unit">00</td>
-          <td id="hours" class="rsvp-time-unit">00</td>
-          <td id="minutes" class="rsvp-time-unit">00</td>
-          <td id="seconds" class="rsvp-time-unit">00</td>
-        </tr>
-        <tr>
-          <td class="rsvp-count-down-text">дней</td>
-          <td class="rsvp-count-down-text">часов</td>
-          <td class="rsvp-count-down-text">минут</td>
-          <td class="rsvp-count-down-text">секунд</td>
-        </tr>
-        </tbody>
-      </table>
-      <div id="rsvp-button-wrapper">
-        <a id="rsvp-button" href="/rsvp.html">Ответить</a>
       </div>
     </div>
   </div>
 
-  <div id="registry">
-    <div id="quote">«Любить - это находить в счастье другого свое собственное.»</div>
-    <!--<div class="heading" id="registry-heading">Реестр</div>-->
-    <p id="registry-p">Ваше присутствие на нашей свадьбе - величайший подарок, который мы когда-либо могли получить. Если желаете почтить нас вкладом, Вы можете ознакомиться реестром подароков ниже.</p>
+  <div id="rsvp" class="fade">
+    <div id="hearts-clipart"></div>
+    <div id="latin-quote" class="bold secondary-text-size indent">Amor omnia vincit!</div>
+    <div id="rsvp-wrapper">
+      <table id="rsvp-count-down-table">
+        <tbody>
+        <tr>
+            <td id="days" class="rsvp-time-unit">00</td>
+            <td id="hours" class="rsvp-time-unit">00</td>
+            <td id="minutes" class="rsvp-time-unit">00</td>
+            <td id="seconds" class="rsvp-time-unit">00</td>
+        </tr>
+        <tr>
+          <td class="secondary-text-size">дней</td>
+          <td class="secondary-text-size">часов</td>
+          <td class="secondary-text-size">минут</td>
+          <td class="secondary-text-size">секунд</td>
+        </tr>
+        </tbody>
+      </table>
+      <div id="rsvp-button-wrapper">
+        <a id="rsvp-button" href="/rsvp.html" class="button-text-size">Ответить</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="registry" class="fade">
+    <div id="quote" class="primary-font secondary-text-size">«Любить - это находить в счастье другого свое собственное.»</div>
+    <p id="registry-p" class="secondary-text-size">Ваше присутствие на нашей свадьбе - величайший подарок,
+      который мы когда-либо могли получить! Благосклонность к новой ячейке
+      общества Вы можете выразить ознакомившись реестром подарков расположенным
+      ниже.</p>
+    <p id="registry-p2" class="secondary-text-size">Примите нашу признательность.</p>
     <a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/546828093"
        target="_blank">
-      <img id="bbb" src="img/bb&b.png" alt="Bed, Bath, and Beyond">
+       <img class="bbb" id="bbb-img-mobile" src="img/bb&b-mobile.png" alt="Bed, Bath, and Beyond">
+       <img class="bbb" id="bbb-img" src="img/bb&b.png" alt="Bed, Bath, and Beyond">
     </a>
   </div>
 
 </main>
 
-<footer id="footer">
-  <p id="footer-text">Coded by <a id="footer-link" href="https://eugeneilin.dev" target="_blank">Eugene Ilin</a>.</p>
+<section id="moments">
+  <div id="moments-wrapper">
+    <div id="moments-imgs-wrapper">
+      <img class="moments-img" id"moments-img-mobile1" src="img/before-trees-mobile.jpg">
+      <!-- <img class="moments-img" id"moments-img1" src="img/before-trees.jpg"> -->
+      <img class="moments-img" id"moments-img-mobile2" src="img/on-bridge-sepia-mobile.jpg">
+      <!-- <img class="moments-img" id"moments-img2" src="img/on-bridge-sepia.jpg"> -->
+      <img class="moments-img" id"moments-img-mobile3" src="img/back-img-main-mobile.jpg">
+      <!-- <img class="moments-img" id"moments-img3" src="img/back-img-main.jpg"> -->
+      <img class="moments-img" id"moments-img-mobile4" src="img/before-trees-sepia-mobile.jpg">
+      <!-- <img class="moments-img" id"moments-img4" src="img/before-trees-sepia.jpg"> -->
+    </div>
+    <div id="moments-go-back-button-wrapper">
+      <a id="moments-go-back-button" href="#" onclick="closeMoments()" class="button-text-size">« Назад</a>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="footer-text moments-footer">Coded by <a class="footer-link" href="https://eugeneilin.dev" target="_blank">Eugene Ilin</a>.</p>
+  </div>
+</section>
+
+<footer id="footer" class="footer">
+  <p class="footer-text">Coded by <a class="footer-link" href="https://eugeneilin.dev" target="_blank">Eugene Ilin</a>.</p>
 </footer>
 
 <script src="main.js"></script>
