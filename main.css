@@ -293,7 +293,7 @@ h1, h2, h3, h4, p, div, span {
 
 #rsvp-wrapper {
   text-align: center;
-  padding-top: 35%;
+  padding-top: 43%;
 }
 
 #hearts-clipart {
@@ -303,16 +303,20 @@ h1, h2, h3, h4, p, div, span {
   position: absolute;
   top: 4%;
   left: -7%;
-  opacity: .3;
+  opacity: .2;
   z-index: -1;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-#latin-quote {
-  padding: 1.5em 0 0;
-  border-bottom: 1px solid #6f4e37;
+#quote {
+  margin: 1em 10vw;
+  line-height: 1.1em;
+  border: dotted #6f4e37 1px;
+  padding: 1em;
+  text-align: center;
+  background-color: #ffebedb0;
 }
 
 #rsvp-count-down-table {
@@ -370,22 +374,16 @@ h1, h2, h3, h4, p, div, span {
   border-bottom: 1px solid #6f4e374f;
 }
 
-#registry-p {
-  padding: .5em 0 0;
-  text-indent: 10vw;
-  line-height: 1.4em;
-  margin-bottom: .6em;
-}
-
-#registry-p2 {
-  line-height: 1.4em;
-  margin-bottom: 1.5em;
+.registry-p {
+  padding: .5em 0;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 .bbb {
-  width: 70%;
+  width: 80%;
   display: block;
-  margin: auto;
+  margin: 1.5em auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -400,15 +398,6 @@ h1, h2, h3, h4, p, div, span {
 
 #bbb-img {
   display: none;
-}
-
-#quote {
-  margin: 1em 10vw;
-  line-height: 1.1em;
-  border: dotted #6f4e37 1px;
-  padding: 1em;
-  text-align: center;
-  background-color: #ffebedb0;
 }
 
 /* Footer */
@@ -443,7 +432,7 @@ h1, h2, h3, h4, p, div, span {
   /* position: relative; */
   display: grid;
   grid-gap: 5vw;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) */
 }
 
 .moments-img {
@@ -451,12 +440,17 @@ h1, h2, h3, h4, p, div, span {
   box-shadow: 0 0 0.3em 0 black;
 }
 
-#moments-img-mobile1, #moments-img-mobile2, #moments-img-mobile3, #moments-img-mobile4 {
-  display: block !important;
+.mobile {
+  display: block;
 }
 
-#moments-img1, #moments-img2, #moments-img3, #moments-img4 {
-  display: none !important;
+.iPad-and-wider {
+  display: none;
+}
+
+.license {
+  -webkit-filter: contrast(123%) brightness(107%) saturate(125%);
+  filter: contrast(123%) brightness(107%) saturate(125%);
 }
 
 #moments-go-back-button-wrapper {
@@ -627,7 +621,7 @@ h1, h2, h3, h4, p, div, span {
   user-select: none;
   -webkit-transition: ease-in-out .2s;
   -moz-transition: ease-in-out .2s;
-  --ms-transition: ease-in-out .2s;
+  -ms-transition: ease-in-out .2s;
   -o-transition: ease-in-out .2s;
   transition: ease-in-out .2s;
 }
@@ -684,16 +678,8 @@ h1, h2, h3, h4, p, div, span {
     margin: 0 10vw 1em;
   }
 
-  #registry-p {
-    padding: 0;
-    text-indent: 10vw;
+  .registry-p {
     line-height: 1.3em;
-    margin-bottom: .4em;
-  }
-
-  #registry-p2 {
-    line-height: 1.3em;
-    margin-bottom: 1em;
   }
 
   #background-img-rsvp-wrapper {
@@ -719,13 +705,8 @@ h1, h2, h3, h4, p, div, span {
     left: 52%;
   }
 
-  #registry-p {
+  .registry-p {
     line-height: 1.4em;
-  }
-
-  #registry-p2 {
-    line-height: 1.4em;
-    margin-bottom: 1.5em;
   }
 
   #background-img-rsvp-wrapper {
@@ -771,14 +752,6 @@ h1, h2, h3, h4, p, div, span {
 
   .button-text-size {
     font-size: 1.4em;
-  }
-
-  #registry-p {
-    margin-bottom: .1em;
-  }
-
-  #registry-p2 {
-    margin-bottom: .2em;
   }
 
   #background-img-rsvp-wrapper {
@@ -872,17 +845,13 @@ h1, h2, h3, h4, p, div, span {
     margin: 1em 10vw;
   }
 
-  #registry-p {
+  .registry-p {
     margin-bottom: .5em;
     line-height: 1.5em;
   }
 
-  #registry-p2 {
-    margin-bottom: 2em;
-  }
-
   .bbb {
-    width: 50%;
+    width: 55%;
   }
 
   #bbb-img-mobile {
@@ -908,12 +877,12 @@ h1, h2, h3, h4, p, div, span {
     width: 100%;
   }
 
-  #moments-img-mobile1, #moments-img-mobile2, #moments-img-mobile3, #moments-img-mobile4 {
-    display: none !important;
+  .mobile {
+    display: none;
   }
 
-  #moments-img1, #moments-img2, #moments-img3, #moments-img4 {
-    display: block !important;
+  .iPad-and-wider {
+    display: block;
   }
 }
 
@@ -1060,13 +1029,9 @@ h1, h2, h3, h4, p, div, span {
     padding: 13% 11%;
   }
 
-  #registry-p {
+  .registry-p {
     text-indent: 10%;
     margin: 2em 0 1em;
-  }
-
-  #registry-p2 {
-    margin-bottom: 3em;
   }
 
   .bbb {

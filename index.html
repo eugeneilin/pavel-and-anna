@@ -43,7 +43,7 @@
         <a class="menu-list-item secondary-text-size" href="#" onclick="closeMenu()">Добро пожаловать!</a>
         <a class="menu-list-item secondary-text-size" href="#schedule" onclick="closeMenu()">Программа</a>
         <a class="menu-list-item secondary-text-size" href="#rsvp" onclick="closeMenu()">Ответ</a>
-        <a class="menu-list-item secondary-text-size" href="#registry" onclick="closeMenu()">Помощь</a>
+        <a class="menu-list-item secondary-text-size" href="#registry" onclick="closeMenu()">Реестр</a>
         <a id="moments-link" class="menu-list-item secondary-text-size" href="#" onclick="closeMenu(); openMoments()">Фото</a>
       </div>
     </div>
@@ -86,7 +86,7 @@
 
   <div id="rsvp" class="fade">
     <div id="hearts-clipart"></div>
-    <div id="latin-quote" class="bold secondary-text-size indent">Amor omnia vincit!</div>
+    <div id="quote" class="primary-font secondary-text-size">«Любить - это находить в счастье другого свое собственное.»</div>
     <div id="rsvp-wrapper">
       <table id="rsvp-count-down-table">
         <tbody>
@@ -111,17 +111,17 @@
   </div>
 
   <div id="registry" class="fade">
-    <div id="quote" class="primary-font secondary-text-size">«Любить - это находить в счастье другого свое собственное.»</div>
-    <p id="registry-p" class="secondary-text-size">Ваше присутствие на нашей свадьбе - величайший подарок,
-      который мы когда-либо могли получить! Благосклонность к новой ячейке
-      общества Вы можете выразить ознакомившись реестром подарков расположенным
-      ниже.</p>
-    <p id="registry-p2" class="secondary-text-size">Примите нашу признательность.</p>
+    <p class="registry-p secondary-text-size">Ваше присутствие на нашей свадьбе
+      - величайший подарок, который мы когда-либо могли получить!</p>
+    <p class="registry-p secondary-text-size">Благосклонность к новой ячейке
+      общества Вы можете выразить ознакомившись реестром подарков расположенным ниже.</p>
     <a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/546828093"
        target="_blank">
        <img class="bbb" id="bbb-img-mobile" src="img/bb&b-mobile.png" alt="Bed, Bath, and Beyond">
        <img class="bbb" id="bbb-img" src="img/bb&b.png" alt="Bed, Bath, and Beyond">
     </a>
+    <p class="registry-p secondary-text-size">CashApp: <span class="bold">$PaulndAnna</span></p>
+    <p class="registry-p secondary-text-size">Примите нашу признательность.</p>
   </div>
 
 </main>
@@ -129,14 +129,18 @@
 <section id="moments">
   <div id="moments-wrapper">
     <div id="moments-imgs-wrapper">
-      <img class="moments-img" id"moments-img-mobile1" src="img/before-trees-mobile.jpg">
-      <!-- <img class="moments-img" id"moments-img1" src="img/before-trees.jpg"> -->
-      <img class="moments-img" id"moments-img-mobile2" src="img/on-bridge-sepia-mobile.jpg">
-      <!-- <img class="moments-img" id"moments-img2" src="img/on-bridge-sepia.jpg"> -->
-      <img class="moments-img" id"moments-img-mobile3" src="img/back-img-main-mobile.jpg">
-      <!-- <img class="moments-img" id"moments-img3" src="img/back-img-main.jpg"> -->
-      <img class="moments-img" id"moments-img-mobile4" src="img/before-trees-sepia-mobile.jpg">
-      <!-- <img class="moments-img" id"moments-img4" src="img/before-trees-sepia.jpg"> -->
+      <img class="moments-img mobile" src="img/before-trees-mobile.jpg">
+      <img class="moments-img iPad-and-wider" src="img/before-trees.jpg">
+      <img class="moments-img mobile" src="img/waterfall-mobile.jpg">
+      <img class="moments-img iPad-and-wider" src="img/waterfall.jpg">
+      <img class="moments-img mobile" src="img/back-img-main-mobile.jpg">
+      <img class="moments-img iPad-and-wider" src="img/back-img-main.jpg">
+      <img class="moments-img mobile" src="img/selfie-mobile.jpg">
+      <img class="moments-img iPad-and-wider" src="img/selfie.jpg">
+      <img class="moments-img mobile" src="img/on-bridge-sepia-mobile.jpg">
+      <img class="moments-img iPad-and-wider" src="img/on-bridge-sepia.jpg">
+      <img class="moments-img mobile license" src="img/license-mobile.jpg">
+      <img class="moments-img iPad-and-wider license" src="img/license.jpg">
     </div>
     <div id="moments-go-back-button-wrapper">
       <a id="moments-go-back-button" href="#" onclick="closeMoments()" class="button-text-size">« Назад</a>
