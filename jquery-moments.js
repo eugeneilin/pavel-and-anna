@@ -1,7 +1,6 @@
 $(window).on("load",function() {
-
   $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight() + 250;
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight() + 100;
     $(".fade").each(function() {
       var objectBottom = $(this).offset().top + $(this).outerHeight();
 
@@ -20,5 +19,5 @@ $(window).on("load",function() {
   $("#menu-icon").click(function(){
     $("#menu-overlay-wrapper").fadeIn();
   });
-
+  
 });
