@@ -293,16 +293,16 @@ h1, h2, h3, h4, p, div, span {
 
 #rsvp-wrapper {
   text-align: center;
-  padding-top: 43%;
+  padding-top: 30%;
 }
 
 #hearts-clipart {
   background-image: url(img/two-hearts-mobile.jpg);
-  height: 90%;
-  width: 120%;
+  height: 71%;
+  width: 106%;
   position: absolute;
-  top: 4%;
-  left: -7%;
+  top: 18%;
+  left: 0%;
   opacity: .2;
   z-index: -1;
   background-repeat: no-repeat;
@@ -666,9 +666,11 @@ h1, h2, h3, h4, p, div, span {
   }
 
   #hearts-clipart {
-    height: 79%;
-    width: 115%;
-    left: -4%;
+    left: -5%;
+  }
+
+  #rsvp-wrapper {
+    padding-top: 40%;
   }
 
   .button-text-size {
@@ -704,6 +706,10 @@ h1, h2, h3, h4, p, div, span {
 
   #background-img-schedule {
     left: 52%;
+  }
+
+  #rsvp-wrapper {
+    padding-top: 45%;
   }
 
   .registry-p {
@@ -816,10 +822,11 @@ h1, h2, h3, h4, p, div, span {
 
   #hearts-clipart {
     background-image: url(img/two-hearts.jpg);
-    height: 89vh;
+    height: 76vh;
     width: 100%;
-    left: 5%;
-}
+    left: 3%;
+    top: 16%;
+  }
 
   #rsvp-count-down-table {
     width: 76vw;
@@ -1003,10 +1010,10 @@ h1, h2, h3, h4, p, div, span {
   }
 
   #hearts-clipart {
-    height: 72vh;
-    width: 90%;
-    left: 2%;
-    top: 2%;
+    height: 65vh;
+    width: 100%;
+    left: 3%;
+    top: 24%;
   }
 
   #rsvp-count-down-table {
