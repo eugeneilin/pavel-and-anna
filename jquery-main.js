@@ -13,12 +13,14 @@ $(window).on("load",function() {
     });
   }).scroll();
 
-  $("#overlay-heading, .menu-list-item, #exit-menu").click(function(){
-    $("#menu-overlay-wrapper").fadeOut();
-  });
-
   $("#menu-icon").click(function(){
     $("#menu-overlay-wrapper").fadeIn();
+    $("#exit-menu").css("display", "block");
+  });
+
+  $("#overlay-heading, .menu-list-item, #exit-menu").click(function(){
+    $("#menu-overlay-wrapper").fadeOut();
+    $("#exit-menu").css("display", "none");
   });
 
 });
