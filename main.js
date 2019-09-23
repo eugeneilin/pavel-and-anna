@@ -1,3 +1,16 @@
+// // Open and close Menu
+// function openMenu() {
+//   document.getElementById('menu-overlay-wrapper').style.display = 'block';
+//   document.getElementById('menu-icon').style.display = 'none';
+//   document.getElementById('exit-menu').style.display = 'block';
+// }
+//
+// function closeMenu() {
+//   document.getElementById('menu-overlay-wrapper').style.display = 'none';
+//   document.getElementById('menu-icon').style.display = 'block';
+//   document.getElementById('exit-menu').style.display = 'none';
+// }
+
 // Set the date we're counting down to
 let countDownDate = new Date('Oct 12, 2019 10:00:00').getTime();
 
