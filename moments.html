@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Павел Прутяну | Анна Ильин</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="main.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="jquery-moments.js"></script>
+</head>
+
+<body>
+
+<section>
+  <div id="menu-icon" onclick="openMenu()">
+    <div id="menu-label-wrapper">
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+      <div id="menu-label" class="secondary-text-size">Menu</div>
+    </div>
+  </div>
+  <div id="menu-overlay-wrapper">
+    <div id="menu-overlay" onclick="closeMenu()">
+      <div id="overlay-heading-wrapper">
+        <a id="overlay-heading" href="index.html" onclick="closeMenu()" class="primary-font">Паша & Аня</a>
+      </div>
+      <div id="overlay-list">
+        <a class="menu-list-item secondary-text-size" href="index.html" onclick="closeMenu()">Добро пожаловать!</a>
+        <a class="menu-list-item secondary-text-size" href="index.html#schedule" onclick="closeMenu()">Программа</a>
+        <a class="menu-list-item secondary-text-size" href="index.html#rsvp" onclick="closeMenu()">Ответ</a>
+        <a class="menu-list-item secondary-text-size" href="index.html#registry" onclick="closeMenu()">Реестр</a>
+        <a id="moments-link" class="menu-list-item secondary-text-size" href="#" onclick="closeMenu(); openMoments()">Фото</a>
+      </div>
+    </div>
+  </div>
+  <div id="exit-menu" onclick="closeMenu()"></div>
+</section>
+
+<main id="moments">
+  <div id="moments-wrapper">
+    <div id="moments-imgs-wrapper">
+      <img class="moments-img mobile" src="img/before-trees-mobile.jpg">
+      <img class="moments-img iPad-and-wider" src="img/before-trees.jpg">
+      <img class="moments-img mobile fade" src="img/waterfall-mobile.jpg">
+      <img class="moments-img iPad-and-wider fade" src="img/waterfall.jpg">
+      <img class="moments-img mobile fade" src="img/back-img-main-mobile.jpg">
+      <img class="moments-img iPad-and-wider fade" src="img/back-img-main.jpg">
+      <img class="moments-img mobile fade" src="img/selfie-mobile.jpg">
+      <img class="moments-img iPad-and-wider fade" src="img/selfie.jpg">
+      <img class="moments-img mobile fade" src="img/on-bridge-sepia-mobile.jpg">
+      <img class="moments-img iPad-and-wider fade" src="img/on-bridge-sepia.jpg">
+      <img class="moments-img mobile fade license" src="img/license-mobile.jpg">
+      <img class="moments-img iPad-and-wider fade license" src="img/license.jpg">
+    </div>
+    <div id="moments-go-back-button-wrapper">
+      <a id="moments-go-back-button" href="index.html" onclick="closeMoments()" class="button-text-size">« Назад</a>
+    </div>
+  </div>
+
+  <footer id="footer" class="moments-footer">
+    <p class="footer-text">Coded by <a class="footer-link" href="https://eugeneilin.dev" target="_blank">Eugene Ilin</a>.</p>
+  </footer>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>

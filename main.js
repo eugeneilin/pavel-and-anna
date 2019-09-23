@@ -1,16 +1,3 @@
-// Open and close Menu
-function openMenu() {
-  document.getElementById('menu-overlay-wrapper').style.display = 'block';
-  document.getElementById('menu-icon').style.display = 'none';
-  document.getElementById('exit-menu').style.display = 'block';
-}
-
-function closeMenu() {
-  document.getElementById('menu-overlay-wrapper').style.display = 'none';
-  document.getElementById('menu-icon').style.display = 'block';
-  document.getElementById('exit-menu').style.display = 'none';
-}
-
 // Set the date we're counting down to
 let countDownDate = new Date('Oct 12, 2019 10:00:00').getTime();
 
@@ -37,25 +24,6 @@ let x = setInterval(function () {
   //   document.getElementById("rsvp-count-down").innerHTML = "EXPIRED";
   // }
 }, 1000);
-
-// 'Moments' controls
-function openMoments() {
-  document.getElementById('header').style.display = 'none';
-  document.getElementById('schedule').style.display = 'none';
-  document.getElementById('rsvp').style.display = 'none';
-  document.getElementById('registry').style.display = 'none';
-  document.getElementById('footer').style.display = 'none';
-  document.getElementById('moments').style.display = 'block';
-}
-
-function closeMoments() {
-  document.getElementById('header').style.display = 'block';
-  document.getElementById('schedule').style.display = 'block';
-  document.getElementById('rsvp').style.display = 'block';
-  document.getElementById('registry').style.display = 'block';
-  document.getElementById('footer').style.display = 'block';
-  document.getElementById('moments').style.display = 'none';
-}
 
 // Firebase configuration
 const firebaseConfig = {

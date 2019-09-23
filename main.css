@@ -415,7 +415,6 @@ h1, h2, h3, h4, p, div, span {
 
 /* Moments */
 #moments {
-  display: none;
   background-color: #ffebed;
   padding: 5%;
   min-height: 100vh;
@@ -492,7 +491,7 @@ h1, h2, h3, h4, p, div, span {
 /* RSVP Form (rsvp.html) */
 #rsvp-section {
   background-color: #ffebed;
-  padding: 5%;
+  padding: 3%;
   min-height: 100vh;
 }
 
@@ -506,7 +505,7 @@ h1, h2, h3, h4, p, div, span {
 #background-img-rsvp-wrapper {
   position: relative;
   display: block;
-  height: 19em;
+  height: 25em;
   overflow: hidden;
   box-shadow: 0 0 0.4em 0 black;
 }
@@ -530,6 +529,10 @@ h1, h2, h3, h4, p, div, span {
   text-shadow: 0 0.05em 0.3em #000;
 }
 
+.toBeFaddedIn {
+  display: none;
+}
+
 .form-control {
   width: 80vw;
   border: 1px solid rgba(111, 78, 55, 0.5);
@@ -546,7 +549,7 @@ h1, h2, h3, h4, p, div, span {
 }
 
 .radio-btns {
-  padding: .3em;
+  padding-top: 0.5em;
 }
 
 #submit-button-wrapper {
@@ -1056,16 +1059,16 @@ h1, h2, h3, h4, p, div, span {
   }
 
   #background-img-rsvp-wrapper {
-    height: 24em;
+    height: 26em;
     margin: 5vh;
   }
 
   #background-img-rsvp {
-    height: 103%;
+    height: 110%;
   }
 
   #rsvp-form-date {
-    margin: 11% 0 0;
+    margin: -3% 0 0;
     color: #29140b;
   }
 
