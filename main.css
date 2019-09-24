@@ -509,7 +509,7 @@ h1, h2, h3, h4, p, div, span {
 }
 
 #background-img-rsvp {
-  background-image: url(img/before-trees-sepia.jpg);
+  background-image: url(img/before-trees-sepia-mobile.jpg);
   position: absolute;
   background-size: cover;
   top: -1.2em;
@@ -871,6 +871,7 @@ h1, h2, h3, h4, p, div, span {
   }
 
   #background-img-rsvp {
+    background-image: url(img/before-trees-sepia.jpg);
     top: -3%;
     left: 0;
     height: 120%;
