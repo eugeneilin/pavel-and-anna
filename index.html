@@ -1,135 +1,212 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Павел Прутяну | Анна Ильин</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="main.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery-main.js"></script>
+  </head>
 
-<head>
-  <title>Павел Прутяну | Анна Ильин</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="main.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="jquery-main.js"></script>
-</head>
-
-<body>
-
-<header id="header">
-  <div id="background-img-wrapper">
-    <img class="background-img-main" id="main-img-mobile" src="img/back-img-main-mobile.JPG"/>
-    <img class="background-img-main" id="main-img" src="img/before-trees.JPG"/>
-  </div>
-  <div id="img-overlay"></div>
-  <div id="header-content-wrapper">
-    <div id="header-vertical-alignment">
-      <div id="header-text">
-        <div id="header-names" class="primary-font indent">Паша & Aня</div>
+  <body>
+    <header id="header">
+      <div id="background-img-wrapper">
+        <img
+          class="background-img-main"
+          id="main-img-mobile"
+          src="img/back-img-main-mobile.JPG"
+        />
+        <img
+          class="background-img-main"
+          id="main-img"
+          src="img/before-trees.JPG"
+        />
       </div>
-      <div id="header-message" class="secondary-text-size">«Смотрите, какую любовь дал нам Отец...» 1Ин. 3:1</div>
-    </div>
-  </div>
-  <div id="menu-icon" onclick="openMenu()">
-    <div id="menu-label-wrapper">
-      <div class="menu-icon-bar"></div>
-      <div class="menu-icon-bar"></div>
-      <div class="menu-icon-bar"></div>
-      <div id="menu-label" class="secondary-text-size">Menu</div>
-    </div>
-  </div>
-  <div id="menu-overlay-wrapper">
-    <div id="menu-overlay" onclick="closeMenu()">
-      <div id="overlay-heading-wrapper">
-        <a id="overlay-heading" href="#" onclick="closeMenu()" class="primary-font">Паша & Аня</a>
-      </div>
-      <div id="overlay-list">
-        <a class="menu-list-item secondary-text-size" href="#" onclick="closeMenu()">Добро пожаловать!</a>
-        <a class="menu-list-item secondary-text-size" href="#schedule" onclick="closeMenu()">Программа</a>
-        <a class="menu-list-item secondary-text-size" href="#rsvp" onclick="closeMenu()">Ответ</a>
-        <a class="menu-list-item secondary-text-size" href="#registry" onclick="closeMenu()">Реестр</a>
-        <a id="moments-link" class="menu-list-item secondary-text-size" href="moments.html" onclick="closeMenu(); openMoments()">Фото</a>
-      </div>
-    </div>
-  </div>
-  <div id="exit-menu" onclick="closeMenu()"></div>
-</header>
-
-<main>
-
-  <div id="schedule" class="fade">
-    <div id="schedule-content-wrapper">
-      <div id="background-img-schedule"></div>
-      <div id="heading-date" class="secondary-text-size indent">Суббота<div class="bold">12 октября, 2019 года</div></div>
-      <div id="schedule-info" class="secondary-text-size">
-        <table class="info-table indent">
-          <tr>
-            <td class="bold table-line-padding">10:00</td>
-            <td class="table-line-padding">Венчание</td>
-          </tr>
-          <tr>
-            <td class="info-time-of-day">a.m.</td>
-          </tr>
-          <tr>
-            <td class="bold table-line-padding">1:00</td>
-            <td class="table-line-padding">Пир</td>
-          </tr>
-          <tr>
-            <td class="info-time-of-day">p.m.</td>
-          </tr>
-        </table>
-
-        <div id="address-and-calendar-wrapper">
-          <a class="address-and-calendar" target="_blank" href="https://goo.gl/maps/pfQhGWnVTY7oUdAm6">
-            Slate Hill Mennonite Church<br>1352 Slate Hill Rd<br>Camp Hill, PA 17011</a>
-          <!-- <a class="address-and-calendar" href="#">Добавить в календарь</a> -->
+      <div id="img-overlay"></div>
+      <div id="header-content-wrapper">
+        <div id="header-vertical-alignment">
+          <div id="header-text">
+            <div id="header-names" class="primary-font indent">Паша & Aня</div>
+          </div>
+          <div id="header-message" class="secondary-text-size">
+            «Смотрите, какую любовь дал нам Отец...» 1Ин. 3:1
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div id="rsvp" class="fade">
-    <div id="hearts-clipart"></div>
-    <div id="quote" class="primary-font secondary-text-size">«Любить - это находить в счастье другого свое собственное.»</div>
-    <div id="rsvp-wrapper">
-      <table id="rsvp-count-down-table">
-        <tbody>
-        <tr>
-            <td id="days" class="rsvp-time-unit">00</td>
-            <td id="hours" class="rsvp-time-unit">00</td>
-            <td id="minutes" class="rsvp-time-unit">00</td>
-            <td id="seconds" class="rsvp-time-unit">00</td>
-        </tr>
-        <tr>
-          <td class="secondary-text-size">дней</td>
-          <td class="secondary-text-size">часов</td>
-          <td class="secondary-text-size">минут</td>
-          <td class="secondary-text-size">секунд</td>
-        </tr>
-        </tbody>
-      </table>
-      <div id="rsvp-button-wrapper">
-        <a id="rsvp-button" href="rsvp.html" class="button-text-size">Ответить</a>
+      <div id="menu-icon" onclick="openMenu()">
+        <div id="menu-label-wrapper">
+          <div class="menu-icon-bar"></div>
+          <div class="menu-icon-bar"></div>
+          <div class="menu-icon-bar"></div>
+          <div id="menu-label" class="secondary-text-size">Menu</div>
+        </div>
       </div>
-    </div>
-  </div>
+      <div id="menu-overlay-wrapper">
+        <div id="menu-overlay" onclick="closeMenu()">
+          <div id="overlay-heading-wrapper">
+            <a
+              id="overlay-heading"
+              href="#"
+              onclick="closeMenu()"
+              class="primary-font"
+              >Паша & Аня</a
+            >
+          </div>
+          <div id="overlay-list">
+            <a
+              class="menu-list-item secondary-text-size"
+              href="#"
+              onclick="closeMenu()"
+              >Добро пожаловать!</a
+            >
+            <a
+              class="menu-list-item secondary-text-size"
+              href="#schedule"
+              onclick="closeMenu()"
+              >Программа</a
+            >
+            <a
+              class="menu-list-item secondary-text-size"
+              href="#rsvp"
+              onclick="closeMenu()"
+              >Ответ</a
+            >
+            <a
+              class="menu-list-item secondary-text-size"
+              href="#registry"
+              onclick="closeMenu()"
+              >Реестр</a
+            >
+            <a
+              id="moments-link"
+              class="menu-list-item secondary-text-size"
+              href="moments.html"
+              onclick="closeMenu(); openMoments()"
+              >Фото</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="exit-menu" onclick="closeMenu()"></div>
+    </header>
 
-  <div id="registry" class="fade">
-    <p class="registry-p secondary-text-size">Ваше присутствие на нашей свадьбе
-      - величайший подарок, который мы когда-либо могли получить!</p>
-    <p class="registry-p secondary-text-size">Благосклонность к новой ячейке
-      общества Вы можете выразить ознакомившись реестром подарков расположенным ниже.</p>
-    <a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/546828093"
-       target="_blank">
-       <img class="bbb" id="bbb-img-mobile" src="img/bb&b-mobile.png" alt="Bed, Bath, and Beyond">
-       <img class="bbb" id="bbb-img" src="img/bb&b.png" alt="Bed, Bath, and Beyond">
-    </a>
-    <p class="registry-p secondary-text-size">CashApp: <span class="bold">$PaulndAnna</span></p>
-    <p class="registry-p secondary-text-size">Примите нашу признательность.</p>
-  </div>
+    <main>
+      <div id="schedule" class="fade">
+        <div id="schedule-content-wrapper">
+          <div id="background-img-schedule"></div>
+          <div id="heading-date" class="secondary-text-size indent">
+            Суббота
+            <div class="bold">12 октября, 2019 года</div>
+          </div>
+          <div id="schedule-info" class="secondary-text-size">
+            <table class="info-table indent">
+              <tr>
+                <td class="bold table-line-padding">10:00</td>
+                <td class="table-line-padding">Венчание</td>
+              </tr>
+              <tr>
+                <td class="info-time-of-day">a.m.</td>
+              </tr>
+              <tr>
+                <td class="bold table-line-padding">1:00</td>
+                <td class="table-line-padding">Пир</td>
+              </tr>
+              <tr>
+                <td class="info-time-of-day">p.m.</td>
+              </tr>
+            </table>
 
-</main>
+            <div id="address-and-calendar-wrapper">
+              <a
+                class="address-and-calendar"
+                target="_blank"
+                href="https://goo.gl/maps/pfQhGWnVTY7oUdAm6"
+              >
+                Slate Hill Mennonite Church<br />1352 Slate Hill Rd<br />Camp
+                Hill, PA 17011</a
+              >
+              <!-- <a class="address-and-calendar" href="#">Добавить в календарь</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
 
-<footer id="footer" class="footer">
-  <p class="footer-text">Coded by <a class="footer-link" href="https://eugeneilin.dev" target="_blank">Eugene Ilin</a>.</p>
-</footer>
+      <div id="rsvp" class="fade">
+        <div id="hearts-clipart"></div>
+        <div id="quote" class="primary-font secondary-text-size">
+          «Любить - это находить в счастье другого свое собственное.»
+        </div>
+        <div id="rsvp-wrapper">
+          <table id="rsvp-count-down-table">
+            <tbody>
+              <tr>
+                <td id="days" class="rsvp-time-unit">00</td>
+                <td id="hours" class="rsvp-time-unit">00</td>
+                <td id="minutes" class="rsvp-time-unit">00</td>
+                <td id="seconds" class="rsvp-time-unit">00</td>
+              </tr>
+              <tr>
+                <td class="secondary-text-size">дней</td>
+                <td class="secondary-text-size">часов</td>
+                <td class="secondary-text-size">минут</td>
+                <td class="secondary-text-size">секунд</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="rsvp-button-wrapper">
+            <a id="rsvp-button" href="rsvp.html" class="button-text-size"
+              >Ответить</a
+            >
+          </div>
+        </div>
+      </div>
 
-<script src="main.js"></script>
-</body>
+      <div id="registry" class="fade">
+        <p class="registry-p secondary-text-size">
+          Ваше присутствие на нашей свадьбе - величайший подарок, который мы
+          когда-либо могли получить!
+        </p>
+        <p class="registry-p secondary-text-size">
+          Благосклонность к новой ячейке общества Вы можете выразить
+          ознакомившись реестром подарков расположенным ниже.
+        </p>
+        <a
+          href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/546828093"
+          target="_blank"
+        >
+          <img
+            class="bbb"
+            id="bbb-img-mobile"
+            src="img/bb&b-mobile.png"
+            alt="Bed, Bath, and Beyond"
+          />
+          <img
+            class="bbb"
+            id="bbb-img"
+            src="img/bb&b.png"
+            alt="Bed, Bath, and Beyond"
+          />
+        </a>
+        <p class="registry-p secondary-text-size">
+          CashApp: <span class="bold">$PaulndAnna</span>
+        </p>
+        <p class="registry-p secondary-text-size">
+          Примите нашу признательность.
+        </p>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <p class="footer-text">
+        Coded by
+        <a class="footer-link" href="https://eugeneilin.dev" target="_blank"
+          >Eugene Ilin</a
+        >
+        &copy; 2019.
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
